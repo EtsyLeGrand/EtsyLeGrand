@@ -17,6 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: 'Jockey One', sans-serif;
 }
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -44,11 +45,42 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
+br
+{
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
 /* FIN DU CSS RESET */
+::-moz-selection { /* Code for Firefox */
+	color: white;
+	background: none;
+}
+  
+::selection {
+	color: white;
+	background: none;
+}
+
+a:hover  {
+	text-shadow:
+	-1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+	-1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+h1, h2, h3, p {
+	color: #0b0c08;
+}
+
+body {
+	background-color:#058E3F ;
+}
 
 .container {
-
-	margin: 2% 10%
+	margin: 2% 10%;
 }
 
 .center {
@@ -62,6 +94,7 @@ p {
 
 h1 {
 	font-size: 130px;
+	
 }
 
 h2 {
@@ -73,7 +106,7 @@ h3 {
 }
 
 small {
-	color: gray;
+	color: #033d1f;
 }
 
 footer {
@@ -85,5 +118,9 @@ footer {
 	bottom: 0;
 	width: 100%;
 	text-align: center;
-	background-color: gray;
+	background-color: #057e37;
+}
+
+footer p {
+	color: #046231;
 }
