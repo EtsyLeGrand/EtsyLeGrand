@@ -73,14 +73,19 @@ br
     1px 1px 0 #EF476F;
 }
 
-
-
 h1, h2, h3, p {
 	color: #FFFFFF;
 }
 
 body {
-	background-color:#342E37 ;
+	background-color:#342E37;
+	border-style: solid;
+	border-width: 18px;
+	border-color: #EF476F;
+	border-bottom: none;
+	border-radius: 4em;
+	min-height: 100vh;
+	box-sizing: border-box;
 }
 
 .container {
@@ -121,6 +126,7 @@ footer {
 	left: 0;
 	bottom: 0;
 	width: 100%;
+	
 	text-align: center;
 	background-color: #EF476F;
 }
@@ -141,3 +147,75 @@ p a:hover  {
     .5px .5px 0 #ffffff;
 }
 
+/* ANIMATION DU NOM */
+
+.l1 {
+-webkit-animation: letters 3s ;  /* Safari 4+ */
+-moz-animation: letters 3s ;  /* Fx 5+ */
+-o-animation: letters 3s ;  /* Opera 12+ */
+animation: letters 3s ;  /* IE 10+, Fx 29+ */
+animation-delay: 1s;
+}
+
+.l2 {
+-webkit-animation: letters 3s ;  /* Safari 4+ */
+-moz-animation: letters 3s ;  /* Fx 5+ */
+-o-animation: letters 3s ;  /* Opera 12+ */
+animation: letters 3s ;  /* IE 10+, Fx 29+ */
+animation-delay: 1.14s;
+}
+
+.l3 {
+-webkit-animation: letters 3s ;  /* Safari 4+ */
+-moz-animation: letters 3s ;  /* Fx 5+ */
+-o-animation: letters 3s ;  /* Opera 12+ */
+animation: letters 3s ;  /* IE 10+, Fx 29+ */
+animation-delay: 1.28s;
+}
+
+.l4 {
+-webkit-animation: letters 3s ;  /* Safari 4+ */
+-moz-animation: letters 3s ;  /* Fx 5+ */
+-o-animation: letters 3s ;  /* Opera 12+ */
+animation: letters 3s ;  /* IE 10+, Fx 29+ */
+animation-delay: 1.43s;
+}
+
+
+.l5 {
+-webkit-animation: letters 3s ;  /* Safari 4+ */
+-moz-animation: letters 3s ;  /* Fx 5+ */
+-o-animation: letters 3s ;  /* Opera 12+ */
+animation: letters 3s ;  /* IE 10+, Fx 29+ */
+animation-delay: 1.57s;
+}
+
+
+.l6 {
+-webkit-animation: letters 3s ;  /* Safari 4+ */
+-moz-animation: letters 3s ;  /* Fx 5+ */
+-o-animation: letters 3s ;  /* Opera 12+ */
+animation: letters 3s ;  /* IE 10+, Fx 29+ */
+animation-delay: 1.73s;
+}
+
+.l7 {
+-webkit-animation: letters 3s ;  /* Safari 4+ */
+-moz-animation: letters 3s ;  /* Fx 5+ */
+-o-animation: letters 3s ;  /* Opera 12+ */
+animation: letters 3s ;  /* IE 10+, Fx 29+ */
+animation-delay: 1.86s;
+}
+  
+@keyframes letters {
+
+0%, 6% {
+	/*color:#d4d4d4;*/
+	color: #EF476F;
+	-webkit-text-stroke: 1px #fff;
+	}
+13%, 100% {
+	color: #fff;
+	-webkit-text-stroke: 0px #fff;
+}
+}
