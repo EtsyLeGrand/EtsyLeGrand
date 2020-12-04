@@ -54,29 +54,33 @@ br
 }
 /* FIN DU CSS RESET */
 ::-moz-selection { /* Code for Firefox */
-	color: white;
+	color: #342E37;
 	background: none;
+	text-shadow:
+	-1px -1px 0 #EF476F,  
+    1px -1px 0 #EF476F,
+	-1px 1px 0 #EF476F,
+    1px 1px 0 #EF476F;
 }
   
 ::selection {
-	color: white;
+	color: #342E37;
 	background: none;
+	text-shadow:
+	-1px -1px 0 #EF476F,  
+    1px -1px 0 #EF476F,
+	-1px 1px 0 #EF476F,
+    1px 1px 0 #EF476F;
 }
 
-a:hover  {
-	text-shadow:
-	-1px -1px 0 #fff,  
-    1px -1px 0 #fff,
-	-1px 1px 0 #fff,
-    1px 1px 0 #fff;
-}
+
 
 h1, h2, h3, p {
-	color: #0b0c08;
+	color: #FFFFFF;
 }
 
 body {
-	background-color:#058E3F ;
+	background-color:#342E37 ;
 }
 
 .container {
@@ -106,7 +110,7 @@ h3 {
 }
 
 small {
-	color: #033d1f;
+	color: #FFFFFF;
 }
 
 footer {
@@ -118,9 +122,22 @@ footer {
 	bottom: 0;
 	width: 100%;
 	text-align: center;
-	background-color: #057e37;
+	background-color: #EF476F;
 }
 
 footer p {
-	color: #046231;
+	color: #342E37;
 }
+
+a small:hover  {
+	
+}
+
+p a:hover  {
+	text-shadow:
+	-.5px -.5px 0 #ffffff,  
+    .5px -.5px #ffffff,
+	-.5px .5px 0 #ffffff,
+    .5px .5px 0 #ffffff;
+}
+
