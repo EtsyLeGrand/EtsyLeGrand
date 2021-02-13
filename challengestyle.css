@@ -1,0 +1,221 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Jockey One', sans-serif;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+br
+{
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+/* FIN DU CSS RESET */
+::-moz-selection { /* Code for Firefox */
+	color: #342E37;
+	background: none;
+	text-shadow:
+	-1px -1px 0 #EF476F,  
+    1px -1px 0 #EF476F,
+	-1px 1px 0 #EF476F,
+    1px 1px 0 #EF476F;
+}
+  
+::selection {
+	color: #342E37;
+	background: none;
+	text-shadow:
+	-1px -1px 0 #EF476F,  
+    1px -1px 0 #EF476F,
+	-1px 1px 0 #EF476F,
+    1px 1px 0 #EF476F;
+}
+
+h1, h2, h3, p {
+	color: #FFFFFF;
+}
+
+body {
+	background-color:#342E37;
+	border-style: solid;
+	border-width: 18px;
+	border-color: #EF476F;
+	border-bottom: none;
+	border-radius: 4em;
+	min-height: 100vh;
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 2% 10%;
+}
+
+.center {
+	display: block;
+	text-align: center;
+}
+
+p {
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 130px;
+	
+}
+
+h2 {
+	font-size: 100px;
+}
+
+h3 {
+	font-size: 50px;
+}
+
+small {
+	color: #FFFFFF;
+}
+
+footer {
+	padding-top: 1%;
+	padding-bottom: 1%;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	
+	text-align: center;
+	background-color: #EF476F;
+}
+
+footer p {
+	color: #342E37;
+}
+
+a small:hover  {
+	
+}
+
+p a:hover  {
+	text-shadow:
+	-.5px -.5px 0 #ffffff,  
+    .5px -.5px #ffffff,
+	-.5px .5px 0 #ffffff,
+    .5px .5px 0 #ffffff;
+}
+
+/* ANIMATION DU NOM */
+
+.l1 {
+-webkit-animation: letters 3s ;  /* Safari 4+ */
+-moz-animation: letters 3s ;  /* Fx 5+ */
+-o-animation: letters 3s ;  /* Opera 12+ */
+animation: letters 3s ;  /* IE 10+, Fx 29+ */
+animation-delay: 1s;
+}
+
+.l2 {
+-webkit-animation: letters 3s ;  /* Safari 4+ */
+-moz-animation: letters 3s ;  /* Fx 5+ */
+-o-animation: letters 3s ;  /* Opera 12+ */
+animation: letters 3s ;  /* IE 10+, Fx 29+ */
+animation-delay: 1.14s;
+}
+
+.l3 {
+-webkit-animation: letters 3s ;  /* Safari 4+ */
+-moz-animation: letters 3s ;  /* Fx 5+ */
+-o-animation: letters 3s ;  /* Opera 12+ */
+animation: letters 3s ;  /* IE 10+, Fx 29+ */
+animation-delay: 1.28s;
+}
+
+.l4 {
+-webkit-animation: letters 3s ;  /* Safari 4+ */
+-moz-animation: letters 3s ;  /* Fx 5+ */
+-o-animation: letters 3s ;  /* Opera 12+ */
+animation: letters 3s ;  /* IE 10+, Fx 29+ */
+animation-delay: 1.43s;
+}
+
+
+.l5 {
+-webkit-animation: letters 3s ;  /* Safari 4+ */
+-moz-animation: letters 3s ;  /* Fx 5+ */
+-o-animation: letters 3s ;  /* Opera 12+ */
+animation: letters 3s ;  /* IE 10+, Fx 29+ */
+animation-delay: 1.57s;
+}
+
+
+.l6 {
+-webkit-animation: letters 3s ;  /* Safari 4+ */
+-moz-animation: letters 3s ;  /* Fx 5+ */
+-o-animation: letters 3s ;  /* Opera 12+ */
+animation: letters 3s ;  /* IE 10+, Fx 29+ */
+animation-delay: 1.73s;
+}
+
+.l7 {
+-webkit-animation: letters 3s ;  /* Safari 4+ */
+-moz-animation: letters 3s ;  /* Fx 5+ */
+-o-animation: letters 3s ;  /* Opera 12+ */
+animation: letters 3s ;  /* IE 10+, Fx 29+ */
+animation-delay: 1.86s;
+}
+  
+@keyframes letters {
+
+0%, 6% {
+	/*color:#d4d4d4;*/
+	color: #EF476F;
+	-webkit-text-stroke: 1px #fff;
+	}
+13%, 100% {
+	color: #fff;
+	-webkit-text-stroke: 0px #fff;
+}
+}
