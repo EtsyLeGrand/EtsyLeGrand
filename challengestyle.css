@@ -54,7 +54,7 @@ br
 }
 /* FIN DU CSS RESET */
 ::-moz-selection { /* Code for Firefox */
-	color: #342E37;
+	color: #0d0d0e;
 	background: none;
 	text-shadow:
 	-1px -1px 0 #EF476F,  
@@ -64,7 +64,7 @@ br
 }
   
 ::selection {
-	color: #342E37;
+	color: #0d0d0e;
 	background: none;
 	text-shadow:
 	-1px -1px 0 #EF476F,  
@@ -83,15 +83,39 @@ body {
 }
 
 .center {
-	display: block;
 	text-align: center;
 }
 
-.gray {
-	color: rgb(46, 45, 45);
+.left {
+	text-align: left;
 }
-p {
+
+.right {
+	text-align: right;
+}
+
+.i-b {
+	display: inline-block;
+}
+
+#wrapper {
+	display: inline-block;
+	text-align: center;
+}
+
+.automargin {
+	margin-left:auto;
+    margin-right:auto;
+}
+
+.gray {
+	color: rgb(104, 104, 104);
+}
+
+/* FORMATS DE TEXTE */
+li, p {
 	font-size: 20px;
+	color: #FFFFFF;
 }
 
 h1 {
@@ -112,4 +136,18 @@ h3 {
 h4 {
 	font-size: 35px;
 	color: #FFFFFF;
+}
+
+/* FIN DES FORMATS DE TEXTE */
+
+.btnWrapper {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.button {
+	display: inline-block;
+	background-color: #EF476F;
+	padding: 20px;
+	border-radius: 2em;
 }
