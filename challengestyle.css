@@ -73,12 +73,9 @@ br
     1px 1px 0 #EF476F;
 }
 
-h1, h2, h3, p {
-	color: #FFFFFF;
-}
-
 body {
 	background-color:#0d0d0e;
+	color: #FFFFFF;
 }
 
 .container {
@@ -91,6 +88,9 @@ body {
 	text-align: center;
 }
 
+.gray {
+	color: rgb(46, 45, 45);
+}
 p {
 	font-size: 20px;
 }
