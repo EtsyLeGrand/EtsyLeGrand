@@ -75,7 +75,6 @@ br
 
 body {
 	background-color:#0d0d0e;
-	color: #FFFFFF;
 }
 
 .container {
@@ -97,119 +96,20 @@ p {
 
 h1 {
 	font-size: 130px;
-	
+	color: #FFFFFF;
 }
 
 h2 {
 	font-size: 100px;
+	color: #FFFFFF;
 }
 
 h3 {
 	font-size: 50px;
-}
-
-small {
 	color: #FFFFFF;
 }
 
-footer {
-	padding-top: 1%;
-	padding-bottom: 1%;
-	text-align: center;
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	
-	text-align: center;
-	background-color: #EF476F;
-}
-
-footer p {
-	color: #342E37;
-}
-
-a small:hover  {
-	
-}
-
-p a:hover  {
-	text-shadow:
-	-.5px -.5px 0 #ffffff,  
-    .5px -.5px #ffffff,
-	-.5px .5px 0 #ffffff,
-    .5px .5px 0 #ffffff;
-}
-
-/* ANIMATION DU NOM */
-
-.l1 {
--webkit-animation: letters 3s ;  /* Safari 4+ */
--moz-animation: letters 3s ;  /* Fx 5+ */
--o-animation: letters 3s ;  /* Opera 12+ */
-animation: letters 3s ;  /* IE 10+, Fx 29+ */
-animation-delay: 1s;
-}
-
-.l2 {
--webkit-animation: letters 3s ;  /* Safari 4+ */
--moz-animation: letters 3s ;  /* Fx 5+ */
--o-animation: letters 3s ;  /* Opera 12+ */
-animation: letters 3s ;  /* IE 10+, Fx 29+ */
-animation-delay: 1.14s;
-}
-
-.l3 {
--webkit-animation: letters 3s ;  /* Safari 4+ */
--moz-animation: letters 3s ;  /* Fx 5+ */
--o-animation: letters 3s ;  /* Opera 12+ */
-animation: letters 3s ;  /* IE 10+, Fx 29+ */
-animation-delay: 1.28s;
-}
-
-.l4 {
--webkit-animation: letters 3s ;  /* Safari 4+ */
--moz-animation: letters 3s ;  /* Fx 5+ */
--o-animation: letters 3s ;  /* Opera 12+ */
-animation: letters 3s ;  /* IE 10+, Fx 29+ */
-animation-delay: 1.43s;
-}
-
-
-.l5 {
--webkit-animation: letters 3s ;  /* Safari 4+ */
--moz-animation: letters 3s ;  /* Fx 5+ */
--o-animation: letters 3s ;  /* Opera 12+ */
-animation: letters 3s ;  /* IE 10+, Fx 29+ */
-animation-delay: 1.57s;
-}
-
-
-.l6 {
--webkit-animation: letters 3s ;  /* Safari 4+ */
--moz-animation: letters 3s ;  /* Fx 5+ */
--o-animation: letters 3s ;  /* Opera 12+ */
-animation: letters 3s ;  /* IE 10+, Fx 29+ */
-animation-delay: 1.73s;
-}
-
-.l7 {
--webkit-animation: letters 3s ;  /* Safari 4+ */
--moz-animation: letters 3s ;  /* Fx 5+ */
--o-animation: letters 3s ;  /* Opera 12+ */
-animation: letters 3s ;  /* IE 10+, Fx 29+ */
-animation-delay: 1.86s;
-}
-  
-@keyframes letters {
-
-0%, 6% {
-	/*color:#d4d4d4;*/
-	color: #EF476F;
-	-webkit-text-stroke: 1px #fff;
-	}
-13%, 100% {
-	color: #fff;
-	-webkit-text-stroke: 0px #fff;
-}
+h4 {
+	font-size: 35px;
+	color: #FFFFFF;
 }
