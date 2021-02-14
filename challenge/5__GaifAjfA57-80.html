@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="./challengestyle.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="" />
+	<title>Défi</title>
+    <script src="https://kit.fontawesome.com/80cd6fff3b.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="init()">
+	<div class="container">
+        <div class="vertical-center">
+            <h3 class="center">Bonne chance!</h3>
+            <br>
+            <table class="center">
+                <ul class="center">
+                    <li class="pastille pink" onclick="pastilleClick('pink')"></li>
+                    <li class="pastille lime" onclick="pastilleClick('lime')"></li>
+                    <li class="pastille blue" onclick="pastilleClick('blue')"></li>
+                    <li class="pastille cyan" onclick="pastilleClick('cyan')"></li>
+                </ul>
+                <ul class="center">
+                    <li class="pastille red" onclick="pastilleClick('red')"></li>
+                    <li class="pastille yellow" onclick="pastilleClick('yellow')"></li>
+                    <li class="pastille purple"  onclick="pastilleClick('purple')"></li>
+                </ul>
+            </table>
+        </div>
+	</div>
+
+
+    <script>
+        var sequence = [false, false, false, false, false];
+        function init() {
+            
+            /*window.location.replace("./5__GaifAjfA57-80.html");*/
+        }
+/*lime, purple, cyan, yellow, lime, blue*/
+        function pastilleClick(color){
+            if (color == "pink" || color == "red")
+            {
+                for (i = 0; i < sequence.length; ++i) {
+                    sequence[i] = false;
+                }
+            }
+
+            if (color == "lime")
+            {
+                if (sequence[3] == true)
+                    sequence[4] = true;
+                else
+                    for (i = 0; i < sequence.length; ++i)
+                        sequence[i] = false;
+                
+                sequence[0] = true;
+            }
+
+            if (color == "purple")
+            {
+                if (sequence[0] == true)
+                    sequence[1] = true;
+                else
+                    for (i = 0; i < sequence.length; ++i)
+                        sequence[i] = false;
+            }
+
+            if (color == "cyan")
+            {
+                if (sequence[1] == true)
+                    sequence[2] = true;
+                else
+                    for (i = 0; i < sequence.length; ++i)
+                        sequence[i] = false;
+            }
+
+            if (color == "yellow")
+            {
+                if (sequence[2] == true)
+                    sequence[3] = true;
+                else
+                    for (i = 0; i < sequence.length; ++i)
+                        sequence[i] = false;
+            }
+
+            if (color == "blue")
+            {
+                if (sequence[4] == true)
+                    window.location.replace("./6__AHgaIOAf73HA.html");
+                else
+                    for (i = 0; i < sequence.length; ++i)
+                        sequence[i] = false;
+            }
+            /*alert(sequence);*/
+        }
+
+    </script>
+</body>
+
+</html>
+

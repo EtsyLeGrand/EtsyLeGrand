@@ -14,10 +14,9 @@
 <body>
 	<div class="container">
         <div class="vertical-center">
-            <h4 class="center">Quel cavalier de l'apocalypse a pris sa retraite en 1990?</h4>
+            <h3 class="center" id="alltext">J'espère <span id="1">que</span> vous avez porté attention aux <span id="2">questions.</span></h3>
             <br>
             <div class="input-bar center">
-                <input type="text" id="answer" placeholder="Réponse" name="text"></input>
                 <input type="submit" id="submit" value="&#xf061" onclick="checkAnswer()"></input>
             </div>
         </div>
@@ -26,16 +25,13 @@
 
     <script>
         async function checkAnswer() {
-            let value = document.getElementById("answer").value;
-            value = value.toUpperCase();
-            if (value == "PESTILENCE")
-            {
-                document.getElementById("answer").style.backgroundColor = "purple";
-                await new Promise(r => setTimeout(r, 500));
-                window.location.replace("./3__BienOui123.html");
-            } 
-            else
-                document.getElementById("answer").value = "";
+            document.getElementById("1").style.color = "yellow";
+            await new Promise(r => setTimeout(r, 500));
+            document.getElementById("2").style.color = "lime";
+            await new Promise(r => setTimeout(r, 500));
+            document.getElementById("alltext").style.color = "blue";
+            await new Promise(r => setTimeout(r, 500));
+            window.location.replace("./5__GaifAjfA57-80.html");
         }
 
     </script>
