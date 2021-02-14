@@ -14,12 +14,32 @@
 <body>
 	<div class="container">
         <div class="vertical-center">
-            <div class="input-bar">
-                <input type="text" id="answer" placeholder="Réponse"></input>
-                <input type="submit" id="submit" value="&#xf061"></input>
+            <h4 class="center">Comment appelle-t-on le sommet de la forêt amazonienne?</h4>
+            <br>
+            <div class="input-bar center">
+                <input type="text" id="answer" placeholder="Réponse" name="text"></input>
+                <input type="submit" id="submit" value="&#xf061" onclick="checkAnswer()"></input>
             </div>
         </div>
 	</div>
+
+
+    <script>
+        async function checkAnswer() {
+            let value = document.getElementById("answer").value;
+            value = value.toUpperCase();
+            if (value == "CANOPÉE" || value == "LA CANOPÉE" || value == "LA CANOPEE" || value == "CANOPEE")
+            {
+                document.getElementById("answer").style.backgroundColor = "green";
+                await new Promise(r => setTimeout(r, 2000));
+                window.location.replace("./2__T5AgY78N.html");
+            } 
+            else
+                document.getElementById("answer").value = "";
+        }
+
+    </script>
 </body>
 
 </html>
+
