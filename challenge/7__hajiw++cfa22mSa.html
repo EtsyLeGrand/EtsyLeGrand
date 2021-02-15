@@ -14,19 +14,19 @@
 <body onload="init()">
 	<div class="container">
         <div class="vertical-center">
-            <h3 class="center">Entrez encore le même code.</h3>
+            <h3 class="center">C<span class="slime">e</span> code<span class="scyan">-</span>ci est c<span class="spink">a</span>c<span class="spink">h</span>é dans la pa<span class="sblue">g</span>e<span class="spurple">.</span></h3>
             <br>
             <table class="center">
                 <ul class="center">
-                    <li class="pastille pink hcyan" onclick="pastilleClick('pink')"></li>
-                    <li class="pastille lime hred" onclick="pastilleClick('lime')"></li>
-                    <li class="pastille blue hyellow" onclick="pastilleClick('blue')"></li>
-                    <li class="pastille cyan hpurple" onclick="pastilleClick('cyan')"></li>
+                    <li class="darker pastille pink" onclick="pastilleClick('pink')"></li>
+                    <li class="darker pastille lime" onclick="pastilleClick('lime')"></li>
+                    <li class="darker pastille blue" onclick="pastilleClick('blue')"></li>
+                    <li class="darker pastille cyan" onclick="pastilleClick('cyan')"></li>
                 </ul>
                 <ul class="center">
-                    <li class="pastille red hlime" onclick="pastilleClick('red')"></li>
-                    <li class="pastille yellow hpink" onclick="pastilleClick('yellow')"></li>
-                    <li class="pastille purple hblue"  onclick="pastilleClick('purple')"></li>
+                    <li class="darker pastille red" onclick="pastilleClick('red')"></li>
+                    <li class="darker pastille yellow" onclick="pastilleClick('yellow')"></li>
+                    <li class="darker pastille purple"  onclick="pastilleClick('purple')"></li>
                 </ul>
             </table>
         </div>
@@ -39,24 +39,30 @@
             
             /*window.location.replace("./5__GaifAjfA57-80.html");*/
         }
-/*red, cyan, pink, blue, red, purple*/
+/*lime, cyan, pink, pink, blue, purple*/
         function pastilleClick(color){
-            if (color == "yellow" || color == "lime")
+            if (color == "yellow" || color == "red")
             {
                 for (i = 0; i < sequence.length; ++i) {
                     sequence[i] = false;
                 }
             }
 
-            if (color == "red")
+            if (color == "lime")
+            {
+                for (i = 0; i < sequence.length; ++i)
+                    sequence[i] = false;
+                
+                sequence[0] = true;
+            }
+
+            if (color == "blue")
             {
                 if (sequence[3] == true)
                     sequence[4] = true;
                 else
                     for (i = 0; i < sequence.length; ++i)
                         sequence[i] = false;
-                
-                sequence[0] = true;
             }
 
             if (color == "cyan")
@@ -70,17 +76,11 @@
 
             if (color == "pink")
             {
-                if (sequence[1] == true)
-                    sequence[2] = true;
-                else
-                    for (i = 0; i < sequence.length; ++i)
-                        sequence[i] = false;
-            }
-
-            if (color == "blue")
-            {
                 if (sequence[2] == true)
                     sequence[3] = true;
+
+                if (sequence[1] == true)
+                    sequence[2] = true;
                 else
                     for (i = 0; i < sequence.length; ++i)
                         sequence[i] = false;
@@ -90,8 +90,9 @@
             {
                 if (sequence[4] == true)
                 {
-                    window.location.replace("./7__hajiw++cfa22mSa.html");
+                    window.location.replace("./8__52967fAjTAUUUCanjl_faj.html");
                 }
+                    
                 else
                     for (i = 0; i < sequence.length; ++i)
                         sequence[i] = false;

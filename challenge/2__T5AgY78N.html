@@ -14,7 +14,7 @@
 <body>
 	<div class="container">
         <div class="vertical-center">
-            <h4 class="center">Quel cavalier de l'apocalypse a pris sa retraite en 1990?</h4>
+            <h4 class="center" id="title">Quel cavalier de l'apocalypse a pris sa retraite en 1990?</h4>
             <br>
             <div class="input-bar center">
                 <input type="text" id="answer" placeholder="Réponse" name="text"></input>
@@ -30,12 +30,16 @@
             value = value.toUpperCase();
             if (value == "PESTILENCE")
             {
+                document.getElementById("title").innerHTML = "Bravo";
                 document.getElementById("answer").style.backgroundColor = "purple";
                 await new Promise(r => setTimeout(r, 500));
                 window.location.replace("./3__BienOui123.html");
             } 
             else
+                document.getElementById("title").innerHTML = "Non!";
                 document.getElementById("answer").value = "";
+                await new Promise(r => setTimeout(r, 500));
+                document.getElementById("title").innerHTML = "Quel cavalier de l'apocalypse a pris sa retraite en 1990?";
         }
 
     </script>

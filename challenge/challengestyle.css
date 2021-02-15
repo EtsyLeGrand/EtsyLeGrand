@@ -165,6 +165,21 @@ h4 {
 	border-radius: 2em;
 }
 
+input[type=submit].bigbutton {
+	border:none;
+	cursor: pointer;
+	display: inline-block;
+	background-color: #EF476F;
+	padding: 3px;
+	width: 80px;
+	height: 80px;
+	border-radius: 2em;
+	font-family: FontAwesome;
+	font-size: 50px;
+	-ms-transform: translateY(8%);
+	transform: translateY(8%);
+}
+
 input[type=submit] {
 	border:none;
 	cursor: pointer;
@@ -179,8 +194,6 @@ input[type=submit] {
 	-ms-transform: translateY(8%);
 	transform: translateY(8%);
 }
-
-
 
 input[type=submit]:hover {
 	background-color: #0d0d0e;
@@ -213,42 +226,22 @@ input[type=text] {
 	width: 40px;
 	height: 40px;
 	border-radius: 2em;
-	font-family: FontAwesome;
-	font-size: 20px;
 }
 
-.pastille:hover {
+.darker:hover {
 	/*filter: blur(2px);*/
 	filter: brightness(0.5);
 }
 
-.lime {
-	background-color: lime;
-}
+.lime { background-color: lime; } .purple { background-color: purple; } .yellow { background-color: yellow; } .cyan { background-color: cyan; } .red { background-color: red; } .pink { background-color: pink; } .blue { background-color: blue; }
 
-.purple {
-	background-color: purple;
-}
+/* HOVER */
 
-.yellow {
-	background-color: yellow;
-}
+.hlime:hover { background-color: lime; } .hpurple:hover { background-color: purple; } .hyellow:hover { background-color: yellow; } .hcyan:hover { background-color: cyan; } .hred:hover { background-color: red; } .hpink:hover { background-color: pink; } .hblue:hover { background-color: blue; }
 
-.cyan {
-	background-color: cyan;
-}
+/* SELECTION */
 
-.red {
-	background-color: red;
-}
-
-.pink {
-	background-color: pink;
-}
-
-.blue {
-	background-color: blue;
-}
+.slime::selection { color: lime; } .spurple::selection { color: purple; } .syellow::selection { color: yellow; } .scyan::selection { color: cyan; } .sred::selection { color: red; } .spink::selection { color: pink; } .sblue::selection { color: blue; }
 
 li {
 	margin: 0 10px;
