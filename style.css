@@ -54,7 +54,7 @@ br
 }
 /* FIN DU CSS RESET */
 ::-moz-selection { /* Code for Firefox */
-	color: #342E37;
+	color: #0d0d0e;
 	background: none;
 	text-shadow:
 	-1px -1px 0 #EF476F,  
@@ -64,7 +64,7 @@ br
 }
   
 ::selection {
-	color: #342E37;
+	color: #0d0d0e;
 	background: none;
 	text-shadow:
 	-1px -1px 0 #EF476F,  
@@ -78,7 +78,7 @@ h1, h2, h3, p {
 }
 
 body {
-	background-color:#342E37;
+	background-color:#0d0d0e;
 	border-style: solid;
 	border-width: 18px;
 	border-color: #EF476F;
@@ -132,7 +132,7 @@ footer {
 }
 
 footer p {
-	color: #342E37;
+	color: #0d0d0e;
 }
 
 a small:hover  {
