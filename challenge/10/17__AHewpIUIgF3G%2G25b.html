@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./challengestyle10.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="" />
+    <title>Défi</title>
+    <script src="https://kit.fontawesome.com/80cd6fff3b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="vertical-center">
+            <h4 class="center" id="title">Combien de pommes fallait-il manger au Snake?</h4>
+            <br>
+            <div class="input-bar center">
+                <input type="text" id="answer" placeholder="Réponse" name="text"></input>
+                <input type="submit" id="submit" value="&#xf061" onclick="checkAnswer()"></input>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function checkAnswer() {
+            let value = document.getElementById("answer").value;
+            value = value.toUpperCase();
+            if (value == "15")
+            {
+                document.getElementById("title").innerHTML = "Bonne mémoire!";
+                await new Promise(r => setTimeout(r, 500));
+                window.location.replace("./18__5TsgsERt46.html");
+            } 
+            else
+                document.getElementById("title").innerHTML = "Non, retourne voir :)";
+                document.getElementById("answer").value = "";
+                await new Promise(r => setTimeout(r, 500));
+                window.location.replace("./12__926FFH3fn2er809.html"); 
+        }
+
+    </script>
+</body>
+
+</html>

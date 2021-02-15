@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./challengestyle10.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="" />
+    <title>Défi</title>
+    <script src="https://kit.fontawesome.com/80cd6fff3b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="vertical-center">
+            <h4 class="center" id="title">Q16?</h4>
+            <style>
+                canvas {
+                    position: absolute;
+                    margin: auto;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                }
+            </style>
+        </div>
+    </div>
+
+    <script>
+        var diff = 0, WIDTH=700, HEIGHT=600, pi=Math.PI;
+        var UpArrow=38, DownArrow=40;
+        var canvas, ctx, keystate;
+        var player, ai, ball;
+         
+        player = {
+            x: null,
+            y: null,
+            width: 20,
+            height: 100,
+         
+            update: function() {
+                if (keystate[UpArrow]) this.y -= 7;
+                if (keystate[DownArrow]) this.y += 7;
+                this.y = Math.max(Math.min(this.y, HEIGHT - this.height), 0);
+            },
+            draw: function() {
+                ctx.fillRect(this.x, this.y, this.width, this.height);
+            }
+        };
+         
+        ai = {
+            x: null,
+            y: null,
+            width: 20,
+            height: 100,
+            modif: 0.04,
+         
+            update: function() {
+                var destinationy = ball.y - (this.height - ball.side)*0.5;
+                this.y += (destinationy - this.y) * (this.modif);
+                this.y = Math.max(Math.min(this.y, HEIGHT - this.height), 0);
+            },
+            draw: function() {
+                ctx.fillRect(this.x, this.y, this.width, this.height);
+            }
+        };
+         
+        ball = {
+            x: null,
+            y: null,
+            pS: 0,
+            psX: 173,
+            aS: 0,
+            asX: 519,
+            sY: 80,
+            velocity: null,
+            side: 20,
+            speed: 8,
+         
+            serve: function(side) {
+                var r = Math.random();
+                this.x = side===1 ? player.x+player.width : ai.x - this.side;
+                this.y = (HEIGHT - this.side)*r;
+         
+                var phi = 0.1*pi*(1 - 2*r);
+                this.velocity = {
+                    x: side*this.speed*Math.cos(phi),
+                    y: this.speed*Math.sin(phi)
+                }
+            },
+            update: function() {
+                this.x += this.velocity.x;
+                this.y += this.velocity.y;
+         
+                if (0 > this.y || this.y+this.side > HEIGHT) {
+                    var offset = this.velocity.y < 0 ? 0 - this.y : HEIGHT - (this.y+this.side);
+                    this.y += 2*offset;
+                    this.velocity.y *= -1;
+                }
+         
+                var AABBIntersect = function(ax, ay, aw, ah, bx, by, bw, bh) {
+                    return ax < bx+bw && ay < by+bh && bx < ax+aw && by < ay+ah;
+                };
+         
+                var paddle = this.velocity.x < 0 ? player : ai;
+                if (AABBIntersect(paddle.x, paddle.y, paddle.width, paddle.height,
+                    this.x, this.y, this.side, this.side)
+                ) {
+                    this.x = paddle===player ? player.x+player.width : ai.x - this.side;
+                    var n = (this.y+this.side - paddle.y)/(paddle.height+this.side);
+                    var phi = 0.25*pi*(2*n - 1); // pi/4 = 45
+         
+                    var smash = Math.abs(phi) > 0.2*pi ? 1.5 : 1;
+                    this.velocity.x = smash*(paddle===player ? 1 : -1)*this.speed*Math.cos(phi);
+                    this.velocity.y = smash*this.speed*Math.sin(phi);
+                }
+                if (0 > this.x+this.side) {
+                    this.serve(paddle===player ? 1 : 1);
+                    this.aS += 1;
+                }
+         
+                if (this.x > WIDTH) {
+                    this.serve(paddle===player ? -1 : -1);
+                    this.pS += 1;
+                }
+            },
+            draw: function() {
+                ctx.fillRect(this.x, this.y, this.side, this.side);
+                ctx.fillText(this.pS,this.psX,this.sY);
+                ctx.fillText(this.aS,this.asX,this.sY);
+            }
+        };
+         
+        function main() {
+            canvas = document.createElement("canvas");
+            canvas.width = WIDTH;
+            canvas.height = HEIGHT;
+            ctx = canvas.getContext("2d");
+            document.body.appendChild(canvas);
+         
+            keystate = {};
+            document.addEventListener("keydown", function(evt) {
+                keystate[evt.keyCode] = true;
+            });
+            document.addEventListener("keyup", function(evt) {
+                delete keystate[evt.keyCode];
+            });
+         
+         
+         
+            init();
+         
+            var loop = function() {
+                update();
+                draw();
+         
+                window.requestAnimationFrame(loop, canvas);
+            };
+            window.requestAnimationFrame(loop, canvas);
+        }
+         
+        function init() {
+            player.x = player.width;
+            player.y = (HEIGHT - player.height)/2;
+         
+            ai.x = WIDTH - (player.width + ai.width);
+            ai.y = (HEIGHT - ai.height)/2;
+         
+            ball.serve(1);
+        }
+         
+        function update() {
+            ball.update();
+            player.update();
+            ai.update();
+         
+        }
+         
+        function draw() {
+            ctx.fillRect(0, 0, WIDTH, HEIGHT);
+         
+            ctx.save();
+         
+            ctx.fillStyle = "#fff";
+            ctx.font = "30px Arial";
+         
+            ball.draw();    
+            player.draw();
+            ai.draw();
+         
+            var w = 4;
+            var x = (WIDTH - w)*0.5;
+            var y = 0;
+            var step = HEIGHT/15;
+            while (y < HEIGHT)  {
+                ctx.fillRect(x, y+step*0.25, w, step*0.5);
+                y += step;
+         
+                if (ball.pS >= 10) {
+                    ball.speed = 0;
+                    ball.update();
+                    ai.modif = 0;
+                    window.location.replace("./17__AHewpIUIgF3G%2G25b.html");
+                }
+                if (ball.aS >= 10) {
+                    window.location.replace("./16__aAWEGh3npfahw3FGf197f.html");
+                }
+            }
+         
+            ctx.restore();
+        }
+         
+        main();
+        </script>
+</body>
+
+</html>
