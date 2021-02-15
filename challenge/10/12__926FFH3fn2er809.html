@@ -69,7 +69,8 @@
                     ctx.fillStyle="red";
                     ctx.fillRect(ax*gs,ay*gs,gs-2,gs-2);
                     if (tail >= "20")
-                    window.location.replace("./13__87gwa4424t43qgf3fq3f  .html");
+                        window.location.replace("./13__87gwa4424t43qgf3fq3f.html");
+                    document.getElementById("score").innerHTML = tail-5;
                 }
                 function keyPush(evt) {
                     switch(evt.keyCode) {
@@ -88,6 +89,7 @@
                     }
                 }
                 </script>
+                <h4 class="center" id="score">0</h4>
             </div>
         </div>
     </div>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./challengestyle10.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="" />
+    <title>Défi</title>
+    <script src="https://kit.fontawesome.com/80cd6fff3b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="vertical-center">
+            <div class="img-row center">
+                <div id="1" onclick="imgClicked('1')" style="vertical-align: top; background-image: url(14/president.jpg); display:inline-block; width:200px; height:200px; background-position: 50% 0; background-size: cover; margin:5px;"></div>
+                <div id="2" onclick="imgClicked('2')" style="vertical-align: top; background-image: url(14/cut.jpg); display:inline-block; width:200px; height:200px; background-position: 30% 30%; background-size: cover; margin:5px;"></div>
+            </div>
+            <div class="img-row center">
+                <div id="3" onclick="imgClicked('3')" style="vertical-align: top; background-image: url(14/pyramide.jpg); display:inline-block; width:200px; height:200px; background-position: 30% 30%; background-size: cover; margin:5px;"></div>
+                <div id="4" onclick="imgClicked('4')" style="vertical-align: top; display: inline-block; width: 200px; height: 200px; background-color: purple; margin:5px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var oneSet = false, twoSet = false, threeSet = false;
+        const p = '<div class="nPastille orange" style="margin-top: 5px; margin-left: -150px; font-size:30px;">';
+        async function imgClicked(index) {
+            square = document.getElementById(index);
+            if (square.innerHTML == "")
+            {
+                if (oneSet == true && twoSet == true && threeSet == true)
+                {
+                    square.innerHTML +=  p + '4</div>';
+                    await new Promise(r => setTimeout(r, 750));
+                    if (document.getElementById(4).innerHTML == (p + '1</div>') && document.getElementById(3).innerHTML == (p + '2</div>') && document.getElementById(2).innerHTML == (p + '3</div>') && document.getElementById(1).innerHTML == (p + '4</div>'))
+                    {
+                        alert("gg");
+                    }
+                    else {
+                        for (i = 1; i<5; ++i)
+                        {
+                            document.getElementById(i).innerHTML="";
+                        }
+                        oneSet = twoSet = threeSet = false;
+                    }
+                }
+                else if (oneSet == false)
+                {
+                    square.innerHTML += p + '1</div>';
+                    oneSet = true;
+                }
+                else if (twoSet == false)
+                {
+                    square.innerHTML += p + '2</div>';
+                    twoSet = true;
+                }
+                else if (threeSet == false)
+                {
+                    square.innerHTML += p + '3</div>';
+                    threeSet = true;
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

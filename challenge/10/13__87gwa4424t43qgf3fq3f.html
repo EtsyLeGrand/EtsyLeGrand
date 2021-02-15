@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./challengestyle10.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="" />
+    <title>Défi</title>
+    <script src="https://kit.fontawesome.com/80cd6fff3b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="vertical-center">
+            <h4 class="center" id="title">Qui était le vice-président américain en 1950?</h4>
+            <br>
+            <div class="input-bar center">
+                <input type="text" id="answer" placeholder="Réponse" name="text"></input>
+                <input type="submit" id="submit" value="&#xf061" onclick="checkAnswer()"></input>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function checkAnswer() {
+            let value = document.getElementById("answer").value;
+            value = value.toUpperCase();
+            if (value == "ALBEN WILLIAM BARKLEY")
+            {
+                document.getElementById("title").innerHTML = "Exact";
+                await new Promise(r => setTimeout(r, 500));
+                window.location.replace("./14__agAjg41t67-sjdnFF.html");
+            } 
+            else
+                document.getElementById("title").innerHTML = "Non!";
+                document.getElementById("answer").value = "";
+                await new Promise(r => setTimeout(r, 500));
+                document.getElementById("title").innerHTML = "Qui était le vice-président américain en 1950?"; 
+        }
+
+    </script>
+</body>
+
+</html>
