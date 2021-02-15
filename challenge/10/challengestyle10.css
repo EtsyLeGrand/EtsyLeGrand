@@ -1,0 +1,248 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Jockey One', sans-serif;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color:#0d0d0e;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+br
+{
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+/* FIN DU CSS RESET */
+::-moz-selection { /* Code for Firefox */
+	color: #0d0d0e;
+	background: none;
+	text-shadow:
+	-1px -1px 0 #EF476F,  
+    1px -1px 0 #EF476F,
+	-1px 1px 0 #EF476F,
+    1px 1px 0 #EF476F;
+}
+  
+::selection {
+	color: #0d0d0e;
+	background: none;
+	text-shadow:
+	-1px -1px 0 #EF476F,  
+    1px -1px 0 #EF476F,
+	-1px 1px 0 #EF476F,
+    1px 1px 0 #EF476F;
+}
+
+html, body {
+	height: 100%;
+}
+
+.container {
+	position: relative;
+	height: 100%;
+	width: 100vw;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+
+.vertical-center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.i-b {
+	display: inline-block;
+}
+
+#wrapper {
+	display: inline-block;
+	text-align: center;
+}
+
+.automargin {
+	margin-left:auto;
+    margin-right:auto;
+}
+
+.gray {
+	color: rgb(104, 104, 104);
+}
+
+/* FORMATS DE TEXTE */
+li, p {
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+h1 {
+	font-size: 130px;
+	color: #FFFFFF;
+}
+
+h2 {
+	font-size: 100px;
+	color: #FFFFFF;
+}
+
+h3 {
+	font-size: 50px;
+	color: #FFFFFF;
+}
+
+h4 {
+	font-size: 35px;
+	color: #FFFFFF;
+}
+
+/* FIN DES FORMATS DE TEXTE */
+
+.btnWrapper {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.button {
+	display: inline-block;
+	background-color: #EF476F;
+	padding: 20px;
+	border-radius: 2em;
+}
+
+input[type=submit].bigbutton {
+	border:none;
+	cursor: pointer;
+	display: inline-block;
+	background-color: #EF476F;
+	padding: 3px;
+	width: 80px;
+	height: 80px;
+	border-radius: 2em;
+	font-family: FontAwesome;
+	font-size: 50px;
+	-ms-transform: translateY(8%);
+	transform: translateY(8%);
+}
+
+input[type=submit] {
+	border:none;
+	cursor: pointer;
+	display: inline-block;
+	background-color: #EF476F;
+	padding: 3px;
+	width: 40px;
+	height: 40px;
+	border-radius: 2em;
+	font-family: FontAwesome;
+	font-size: 20px;
+	-ms-transform: translateY(8%);
+	transform: translateY(8%);
+}
+
+input[type=submit]:hover {
+	background-color: #0d0d0e;
+	color: #EF476F;
+	border: 3px solid #EF476F;
+}
+
+input:focus {outline: none;}
+
+input[type=text] {
+	width: 50vh;
+	padding: 10px 20px;
+}
+
+
+
+@media (max-width: 1000px) {
+	input[type=text] {
+		width: 25vh;
+		padding: 10px 20px;
+	}
+}
+
+/* Pastille */
+.pastille {
+	border:none;
+	cursor: pointer;
+	display: inline-block;
+	padding: 3px;
+	width: 40px;
+	height: 40px;
+	border-radius: 2em;
+}
+
+.darker:hover {
+	/*filter: blur(2px);*/
+	filter: brightness(0.5);
+}
+
+.lime { background-color: lime; } .purple { background-color: purple; } .yellow { background-color: yellow; } .cyan { background-color: cyan; } .red { background-color: red; } .pink { background-color: pink; } .blue { background-color: blue; }
+
+/* HOVER */
+
+.hlime:hover { background-color: lime; } .hpurple:hover { background-color: purple; } .hyellow:hover { background-color: yellow; } .hcyan:hover { background-color: cyan; } .hred:hover { background-color: red; } .hpink:hover { background-color: pink; } .hblue:hover { background-color: blue; }
+
+/* SELECTION */
+
+.slime::selection { color: lime; } .spurple::selection { color: purple; } .syellow::selection { color: yellow; } .scyan::selection { color: cyan; } .sred::selection { color: red; } .spink::selection { color: pink; } .sblue::selection { color: blue; }
+
+li {
+	margin: 0 10px;
+}
