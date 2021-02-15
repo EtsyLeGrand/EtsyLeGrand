@@ -29,17 +29,6 @@
         async function checkAnswer() {
             let value = document.getElementById("answer").value;
             value = value.toUpperCase();
-            if (value == "SHERBROOKE")
-            {
-                document.getElementById("title").innerHTML = "😀";
-                await new Promise(r => setTimeout(r, 500));
-                window.location.replace("./18__5TsgsERt46.html");
-            } 
-            else
-                document.getElementById("title").innerHTML = "Non!";
-                document.getElementById("answer").value = "";
-                await new Promise(r => setTimeout(r, 500));
-                document.getElementById("title").innerHTML = "";
         }
 
     </script>
