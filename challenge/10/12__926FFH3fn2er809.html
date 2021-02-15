@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./challengestyle10.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="" />
+    <title>Défi</title>
+    <script src="https://kit.fontawesome.com/80cd6fff3b.js" crossorigin="anonymous"></script>
+</head>
+<body oncontextmenu="return false;">
+    <div class="container">
+        <div class="vertical-center">
+            <h4 class="center" id="title">Quel est le le plus haut nombre de but qu'une équipe de la LNH ait marqué dans un match?</h4>
+            <br>
+            <div class="input-bar center">
+                <canvas id="gc" width="400" height="400"></canvas>
+                <script id="hide">
+                    
+                window.onload=function() {
+                    canv=document.getElementById("gc");
+                    ctx=canv.getContext("2d");
+                    document.addEventListener("keydown",keyPush);
+                    setInterval(game,1000/15);
+                }
+                px=py=10;
+                gs=tc=20;
+                ax=ay=15;
+                xv=yv=0;
+                trail=[];
+                tail = 5;
+                function game() {
+                    px+=xv;
+                    py+=yv;
+                    if(px<0) {
+                        px= tc-1;
+                    }
+                    if(px>tc-1) {
+                        px= 0;
+                    }
+                    if(py<0) {
+                        py= tc-1;
+                    }
+                    if(py>tc-1) {
+                        py= 0;
+                    }
+                    ctx.fillStyle="black";
+                    ctx.fillRect(0,0,canv.width,canv.height);
+
+                    ctx.fillStyle="lime";
+                    for(var i=0;i<trail.length;i++) {
+                        ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-2,gs-2);
+                        if(trail[i].x==px && trail[i].y==py) {
+                            tail = 5;
+                        }
+                    }
+                    trail.push({x:px,y:py});
+                    while(trail.length>tail) {
+                    trail.shift();
+                    }
+
+                    if(ax==px && ay==py) {
+                        tail++;
+                        ax=Math.floor(Math.random()*tc);
+                        ay=Math.floor(Math.random()*tc);
+                    }
+                    ctx.fillStyle="red";
+                    ctx.fillRect(ax*gs,ay*gs,gs-2,gs-2);
+                    if (tail >= "25")
+                    window.location.replace("./13__87gwa4424t43qgf3fq3f  .html");
+                }
+                function keyPush(evt) {
+                    switch(evt.keyCode) {
+                        case 37:
+                            xv=-1;yv=0;
+                            break;
+                        case 38:
+                            xv=0;yv=-1;
+                            break;
+                        case 39:
+                            xv=1;yv=0;
+                            break;
+                        case 40:
+                            xv=0;yv=1;
+                            break;
+                    }
+                }
+                </script>
+            </div>
+        </div>
+    </div>
+<script>
+    document.onkeydown = function(e) {
+if(event.keyCode == 123) {
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+return false;
+}
+}
+</script>
+    
+</body>
+
+</html>

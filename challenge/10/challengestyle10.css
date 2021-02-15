@@ -25,7 +25,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background-color:#0d0d0e;
 }
 ol, ul {
 	list-style: none;
@@ -58,21 +57,26 @@ br
 	color: #0d0d0e;
 	background: none;
 	text-shadow:
-	-1px -1px 0 #EF476F,  
-    1px -1px 0 #EF476F,
-	-1px 1px 0 #EF476F,
-    1px 1px 0 #EF476F;
+	-1px -1px 0 orange,  
+    1px -1px 0 orange,
+	-1px 1px 0 orange,
+    1px 1px 0 orange;
 }
   
 ::selection {
 	color: #0d0d0e;
 	background: none;
 	text-shadow:
-	-1px -1px 0 #EF476F,  
-    1px -1px 0 #EF476F,
-	-1px 1px 0 #EF476F,
-    1px 1px 0 #EF476F;
+	-1px -1px 0 orange,  
+    1px -1px 0 orange,
+	-1px 1px 0 orange,
+    1px 1px 0 orange;
 }
+
+html { 
+	background: url(./background.png);
+	background-size: 100px;
+  }
 
 html, body {
 	height: 100%;
@@ -160,7 +164,7 @@ h4 {
 
 .button {
 	display: inline-block;
-	background-color: #EF476F;
+	background-color: orange;
 	padding: 20px;
 	border-radius: 2em;
 }
@@ -169,7 +173,7 @@ input[type=submit].bigbutton {
 	border:none;
 	cursor: pointer;
 	display: inline-block;
-	background-color: #EF476F;
+	background-color: orange;
 	padding: 3px;
 	width: 80px;
 	height: 80px;
@@ -184,7 +188,7 @@ input[type=submit] {
 	border:none;
 	cursor: pointer;
 	display: inline-block;
-	background-color: #EF476F;
+	background-color: orange;
 	padding: 3px;
 	width: 40px;
 	height: 40px;
@@ -197,8 +201,8 @@ input[type=submit] {
 
 input[type=submit]:hover {
 	background-color: #0d0d0e;
-	color: #EF476F;
-	border: 3px solid #EF476F;
+	color: orange;
+	border: 3px solid orange;
 }
 
 input:focus {outline: none;}
@@ -207,8 +211,6 @@ input[type=text] {
 	width: 50vh;
 	padding: 10px 20px;
 }
-
-
 
 @media (max-width: 1000px) {
 	input[type=text] {

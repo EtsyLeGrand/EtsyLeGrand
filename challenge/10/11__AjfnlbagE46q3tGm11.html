@@ -14,7 +14,7 @@
 <body>
     <div class="container">
         <div class="vertical-center">
-            <h4 class="center" id="title">Qui est le dieu égyptien qui a été nommé "Seigneur de l'Occident" et "Seigneur de la Libye"?</h4>
+            <h4 class="center" id="title">Quel est le le plus haut nombre de but qu'une équipe de la LNH ait marqué dans un match?</h4>
             <br>
             <div class="input-bar center">
                 <input type="text" id="answer" placeholder="Réponse" name="text"></input>
@@ -25,6 +25,19 @@
 
     <script>
         async function checkAnswer() {
+            let value = document.getElementById("answer").value;
+            value = value.toUpperCase();
+            if (value == "16")
+            {
+                document.getElementById("title").innerHTML = "Exact";
+                await new Promise(r => setTimeout(r, 500));
+                window.location.replace("./12__926FFH3fn2er809.html");
+            } 
+            else
+                document.getElementById("title").innerHTML = "Non!";
+                document.getElementById("answer").value = "";
+                await new Promise(r => setTimeout(r, 500));
+                document.getElementById("title").innerHTML = "Quel est le le plus haut nombre de but qu'une équipe de la LNH ait marqué dans un match?"; 
         }
 
     </script>
