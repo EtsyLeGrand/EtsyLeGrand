@@ -95,6 +95,12 @@ html, body {
 	transform: translateY(-50%);
 }
 
+.bottom-center {
+	margin: 0;
+	position: absolute;
+	top: 90%;
+}
+
 .center {
 	text-align: center;
 }
@@ -195,7 +201,7 @@ input[type=submit] {
 	transform: translateY(8%);
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover, .button:hover {
 	background-color: #0d0d0e;
 	color: #EF476F;
 	border: 3px solid #EF476F;
