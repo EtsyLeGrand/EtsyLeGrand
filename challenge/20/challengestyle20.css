@@ -244,11 +244,11 @@ input[type=text] {
 	filter: brightness(0.5);
 }
 
-.turquoise { background-color: turquoise; } .lime { background-color: lime; } .orange { background-color: orange; } .purple { background-color: purple; } .yellow { background-color: yellow; } .cyan { background-color: cyan; } .red { background-color: red; } .pink { background-color: pink; } .blue { background-color: blue; }
+.transparent { background-color: transparent; } .turquoise { background-color: turquoise; } .lime { background-color: lime; } .orange { background-color: orange; } .purple { background-color: purple; } .yellow { background-color: yellow; } .cyan { background-color: cyan; } .red { background-color: red; } .pink { background-color: pink; } .blue { background-color: blue; }
 
 /* HOVER */
 
-.hlime:hover { background-color: lime; } .hpurple:hover { background-color: purple; } .hyellow:hover { background-color: yellow; } .hcyan:hover { background-color: cyan; } .hred:hover { background-color: red; } .hpink:hover { background-color: pink; } .hblue:hover { background-color: blue; }
+.hturquoise:hover { background-color: turquoise; } .hlime:hover { background-color: lime; } .hpurple:hover { background-color: purple; } .hyellow:hover { background-color: yellow; } .hcyan:hover { background-color: cyan; } .hred:hover { background-color: red; } .hpink:hover { background-color: pink; } .hblue:hover { background-color: blue; }
 
 /* SELECTION */
 
