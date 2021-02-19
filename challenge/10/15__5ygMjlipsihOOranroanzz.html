@@ -14,7 +14,7 @@
 <body>
     <div class="container">
         <div class="vertical-center">
-            <h4 class="center">Attention, un échec vous ramènera en arrière!</h4>
+            <h4 class="center"></h4>
             <br>
             <div class="img-row center">
                 <div id="1" onclick="imgClicked('1')"
@@ -83,9 +83,10 @@
 
         async function imgClicked(index) {
             square = document.getElementById(index);
-            if (square.style.filter == "")
+            if (square.style.filter == "" || square.style.filter == "opacity(100%)")
             {
                 square.style.filter = "opacity(0%)";
+                
                 /*
                 Gauche à droite Haut en bas
                       [ ]           [ ]
@@ -98,95 +99,104 @@
 
                     case "2":
                         if(!sets[0][0])
-                            alert("wrong");
+                            fail();
                         else sets[1][0] = true;
                         break;
 
                     case "3":
                         if(!sets[2][3])
-                            alert("wrong");
+                            fail();
                         else window.location.replace("./16__aAWEGh3npfahw3FGf197f.html");
                         break;
 
                     case "4":
                         if(!sets[1][0])
-                            alert("wrong");
+                            fail();
                         else sets[3][0] = true;
                         break;
 
                     case "5":
                         if(!sets[3][1])
-                            alert("wrong");
+                            fail();
                         else sets[0][1] = true;
                         break;
 
                     case "6":
                         if(!sets[1][3])
-                            alert("wrong");
+                            fail();
                         else sets[1][1] = true;
                         break;
 
                     case "7":
                         if(!sets[2][3])
-                            alert("wrong");
+                            fail();
                         else sets[2][1] = true;
                         break;
 
                     case "8":
                         if(!sets[2][1])
-                            alert("wrong");
+                            fail();
                         else sets[3][1] = true;
                         break;
 
                     case "9":
                         if(!sets[1][2])
-                            alert("wrong");
+                            fail();
                         else sets[0][2] = true;
                         break;
 
                     case "10":
                         if(!sets[1][1])
-                            alert("wrong");
+                            fail();
                         else sets[1][2] = true;
                         break;
 
                     case "11":
                         if(!sets[3][2])
-                            alert("wrong");
+                            fail();
                         else sets[2][2] = true;
                         break;
                         
                     case "12":
                         if(!sets[0][2])
-                            alert("wrong");
+                            fail();
                         else sets[3][2] = true;
                         break;
                         
                     case "13":
                         if(!sets[0][1])
-                            alert("wrong");
+                            fail();
                         else sets[0][3] = true;
                         break;
                         
                     case "14":
                         if(!sets[0][3])
-                            alert("wrong");
+                            fail();
                         else sets[1][3] = true;
                         break;
 
                     case "15":
                         if(!sets[3][3])
-                            alert("wrong");
+                            fail();
                         else sets[2][3] = true;
                         break;
                         
                     case "16":
                         if(!sets[3][0])
-                            alert("wrong");
+                            fail();
                         else sets[3][3] = true;
                         break;
                 }
             }
+        }
+        
+        function fail()
+        {
+            for (i = 1; i<17; i++)
+                document.getElementById(i).style.filter = "opacity(100%)";
+            for (i=0; i<3; i++)
+                for (j=0; j<3; j++)
+                    sets[i][j] = false;
         }
     </script>
 </body>

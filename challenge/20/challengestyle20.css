@@ -130,7 +130,7 @@ html, body {
 }
 
 /* FORMATS DE TEXTE */
-li, p {
+li, p, span {
 	font-size: 20px;
 	color: #FFFFFF;
 }
@@ -145,7 +145,7 @@ h2 {
 	color: #FFFFFF;
 }
 
-h3 {
+h3, th {
 	font-size: 50px;
 	color: #FFFFFF;
 }
