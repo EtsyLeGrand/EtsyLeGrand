@@ -219,8 +219,10 @@
                 var checker = true;
                 for (var i=0; i<4; i++)
                 {
-                    if (!(cols[i].tokenCount && rows[i].tokenCount))
+                    if (!(cols[i].conditionSet && rows[i].conditionSet))
+                    {
                         checker = false;
+                    }         
                 }
                 if (checker)
                 {
