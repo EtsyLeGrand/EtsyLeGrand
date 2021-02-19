@@ -27,7 +27,7 @@
         async function checkAnswer() {
             let value = document.getElementById("answer").value;
             value = value.toUpperCase();
-            if (value == "ALBEN WILLIAM BARKLEY")
+            if (value == "ALBEN WILLIAM BARKLEY" || value == "ALBEN BARKLEY")
             {
                 document.getElementById("title").innerHTML = "Exact";
                 await new Promise(r => setTimeout(r, 500));
