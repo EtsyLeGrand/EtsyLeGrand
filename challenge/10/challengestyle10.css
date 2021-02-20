@@ -199,6 +199,12 @@ input[type=submit] {
 	transform: translateY(8%);
 }
 
+.bottom-center {
+	margin: 0;
+	position: absolute;
+	top: 90%;
+}
+
 input[type=submit]:hover {
 	background-color: #0d0d0e;
 	color: orange;
