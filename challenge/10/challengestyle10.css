@@ -205,7 +205,7 @@ input[type=submit] {
 	top: 90%;
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover, .button:hover {
 	background-color: #0d0d0e;
 	color: orange;
 	border: 3px solid orange;
