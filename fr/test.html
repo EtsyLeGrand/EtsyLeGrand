@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html>
-	<head>
-        <meta charset="utf-8" />
-		<link rel="stylesheet" href="../styletest.css" />
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
-		<link rel="shortcut icon" href=""/>
-		<script type="text/javascript" src="../test.js"></script>
-        <title>Je code.</title>
-    </head>
-<body>
-	<div class="container center">
-        <table id="pieces" class="" style="display: inline-block;">
-            <tr id="row1"><td></td><td></td><td></td><td></td></tr>
-            <tr id="row2"><td></td><td></td><td></td><td></td></tr>
-            <tr id="row3"><td></td><td></td><td></td><td></td></tr>
-            <tr id="row4"><td></td><td></td><td></td><td></td></tr>
-            <tr id="row5"><td></td><td></td><td></td><td></td></tr>
-            <tr id="row6"><td></td><td></td><td></td><td></td></tr>
-            <tr id="row7"><td></td><td></td><td></td><td></td></tr>
-            <tr id="row8"><td></td><td></td><td></td><td></td></tr>
-            <tr id="row9"><td></td><td></td><td></td><td></td></tr>
-            <tr id="row10"><td></td><td></td><td></td><td></td></tr>
-            <tr id="row11"><td></td><td></td><td></td><td></td></tr>
-        </table>
 
-        <table id="checker" class="" style="display: inline-block;">
-            <tr id="row1"><td></td><td></td><td></td><td></td></tr>
-            <tr id="row2"><td></td><td></td><td></td><td></td></tr>
-            <tr id="row3"><td></td><td></td><td></td><td></td></tr>
-            <tr id="row4"><td></td><td></td><td></td><td></td></tr>
-            <tr id="row5"><td></td><td></td><td></td><td></td></tr>
-            <tr id="row6"><td></td><td></td><td></td><td></td></tr>
-            <tr id="row7"><td></td><td></td><td></td><td></td></tr>
-            <tr id="row8"><td></td><td></td><td></td><td></td></tr>
-            <tr id="row9"><td></td><td></td><td></td><td></td></tr>
-            <tr id="row10"><td></td><td></td><td></td><td></td></tr>
-            <tr id="row11"><td></td><td></td><td></td><td></td></tr>
-        </table>
-        
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../styletest.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="" />
+    <title>Défi</title>
+    <script src="https://kit.fontawesome.com/80cd6fff3b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="vertical-center btnWrapper" style="display: flex; justify-content: center; align-items: center;">
+            <div class="progress">
+                <div id="bar1"></div>
+            </div>
+            <input class="bigbutton" type="submit"  id="submit" value="&#xf061" onclick="trigger()"></input>
+
+            <div class="progress">
+                <div id="bar2"></div>
+            </div>
+        </div>
     </div>
-		<script>
-            init();
-        </script>
+
+    <script>
+        var height = 0;
+        async function trigger() {
+            if (height < 100)
+                height++;
+            
+            document.getElementById("bar1").style.height = document.getElementById("bar2").style.height = height + "%";
+        }
+        var interval = window.setInterval(myCallback, 100);
+
+        function myCallback() {
+            if (height >= 0)
+                document.getElementById("bar1").style.height = document.getElementById("bar2").style.height = height-- + "%";
+            
+
+        }
+
+    </script>
 </body>
+
 </html>
