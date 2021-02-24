@@ -157,6 +157,11 @@ h4 {
 	color: #FFFFFF;
 }
 
+h5 {
+	font-size: 25px;
+	color: #FFFFFF;
+}
+
 /* FIN DES FORMATS DE TEXTE */
 
 .btnWrapper {
@@ -276,4 +281,8 @@ li {
 
 .spacer {
 	height: 1em;
+}
+
+.pointer {
+	cursor: pointer;
 }
