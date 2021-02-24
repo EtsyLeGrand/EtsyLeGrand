@@ -1,0 +1,148 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Jockey One', sans-serif;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+br
+{
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+/* FIN DU CSS RESET */
+::-moz-selection { /* Code for Firefox */
+	color: #0d0d0e;
+	background: none;
+	text-shadow:
+	-1px -1px 0 #EF476F,  
+    1px -1px 0 #EF476F,
+	-1px 1px 0 #EF476F,
+    1px 1px 0 #EF476F;
+}
+  
+::selection {
+	color: #0d0d0e;
+	background: none;
+	text-shadow:
+	-1px -1px 0 #EF476F,  
+    1px -1px 0 #EF476F,
+	-1px 1px 0 #EF476F,
+    1px 1px 0 #EF476F;
+}
+
+h1, h2, h3, h4, h5, h6, p, span,
+li, tr, td {
+	color: #FFFFFF;
+}
+
+body {
+	background-color:#0d0d0e;
+	min-height: 100vh;
+	font-size: 25px;
+	box-sizing: border-box;
+}
+
+.container {
+	padding: 2% 10%;
+}
+
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+p {
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 130px;
+	
+}
+
+h2 {
+	font-size: 100px;
+}
+
+h3 {
+	font-size: 50px;
+}
+
+table {
+	padding: 10px;
+	background: #444444;
+	height: 90vh;
+}
+
+.pieces {
+	
+}
+
+.pastille {
+	border:none;
+	display: inline-block;
+	padding: 3px;
+	width: 30px;
+	height: 30px;
+	border-radius: 2em;
+}
+
+.sPastille {
+	border:none;
+	display: inline-block;
+	padding: 3px;
+	width: 10px;
+	height: 10px;
+	border-radius: 2em;
+}
+.sEmpty { background: darkgray; border: 3px solid gray; width: 2px; height: 2px;} .white { background-color: white; } .black { background-color: black; } .empty { background: darkgray; border: 5px solid gray; width: 20px; height: 20px;} .lime { background-color: lime; } .orange { background-color: orange; } .purple { background-color: purple; } .yellow { background-color: yellow; } .cyan { background-color: cyan; } .red { background-color: red; } .pink { background-color: pink; } .blue { background-color: blue; }
