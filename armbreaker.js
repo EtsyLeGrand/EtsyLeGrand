@@ -1,6 +1,6 @@
 var height = 0, clicks = 0;
         var pushInterval = window.setInterval(downPush, 100);
-        document.body.onload = setTimeout(start, 5000);
+        DOMContentLoaded = setTimeout(start, 5000);
         var isStarted = false;
         var time;
 
@@ -50,3 +50,8 @@ var height = 0, clicks = 0;
                 document.getElementById("restart").innerHTML = "<br><br>Restart?";
             }
         }
+        document.addEventListener("keydown", event => {
+            if (event.isComposing || event.key === 13) {
+              height = 0; return;
+            }
+          });
