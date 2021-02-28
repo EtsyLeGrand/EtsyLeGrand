@@ -9,26 +9,51 @@
     <link rel="shortcut icon" href="" />
     <title>Speedtactoe</title>
     <script src="https://kit.fontawesome.com/80cd6fff3b.js" crossorigin="anonymous"></script>
-    <script src="../armbreaker.js"></script>
+    <script src="../speedtactoe.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <div class="center">
+        <div class="vertical-center center">
+            <h4>Speedtactoe se joue à 2 joueurs. Un joueur contôle la souris <i class="fas fa-mouse"></i>, et l'autre le clavier <i class="fas fa-keyboard"></i>.</h4>
             <br>
-            <h3 id="main">Remplissez les barres le plus vite possible</h3>
-            <h5 id="sub">Le temps commence quand le fond clignote</h5>
-            <h5 id="restart" class="pointer" onclick="window.location.replace('./armbreaker.html')"></h5>
-        </div>
-        <div class="vertical-center btnWrapper" style="display: flex; justify-content: center; align-items: center;">
-            <div class="progress">
-                <div id="bar1"></div>
-            </div>
-            <input class="bigbutton" type="submit"  id="submit" value="&#xf061" onclick="trigger()"></input>
-
-            <div class="progress">
-                <div id="bar2"></div>
-            </div>
+            <h4>Le joueur qui contrôle la souris a les <span style="font-size:xxx-large;">X</span> et celui qui contrôle le clavier a les <span style="font-size:xxx-large;">O</span>.</h4>
+            <br>
+            <table style="width: 100%;">
+                <tr>
+                    <td style="border-right: 3px solid gray; width: 50%;">
+                        <h4>Souris <i class="fas fa-mouse"></i></h4>
+                        <br>
+                        <h5>Cliquez sur une case vide pour y afficher un <span style="font-size:xxx-large;">X</span>.</h5>
+                    </td>
+                    <td style="border-left: 3px solid gray; width: 50%;">
+                        <h4>Clavier <i class="fas fa-keyboard"></i></h4>
+                        <br>
+                        <h5>Vous utilisez les touches</h5>
+                        <br>
+                        <table class="automargin tutorial" style="width: 30%;">
+                            <tr>
+                                <td><h5>Q</h5></td>
+                                <td><h5>W</h5></td>
+                                <td><h5>E</h5></td>
+                            </tr>
+                            <tr>
+                                <td><h5>A</h5></td>
+                                <td><h5>S</h5></td>
+                                <td><h5>D</h5></td>
+                            </tr>
+                            <tr>
+                                <td><h5>Z</h5></td>
+                                <td><h5>X</h5></td>
+                                <td><h5>C</h5></td>
+                            </tr>
+                        </table>
+                        <h5>Pour placer vos <span style="font-size:xxx-large;">O</span> dans la grille.</h5>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <button class="button" type="submit">Suivant</button>
         </div>
     </div>
     

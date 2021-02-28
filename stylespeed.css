@@ -162,6 +162,10 @@ h5 {
 	color: #FFFFFF;
 }
 
+button {
+	font-family: 'Jockey One', sans-serif;
+	font-size: 20px;
+}
 /* FIN DES FORMATS DE TEXTE */
 
 .btnWrapper {
@@ -174,6 +178,8 @@ h5 {
 	background-color: #EF476F;
 	padding: 20px;
 	border-radius: 2em;
+	border-color:#EF476F;
+	border-style: solid;
 }
 
 input[type=submit].bigbutton {
@@ -209,7 +215,7 @@ input[type=submit] {
 input[type=submit]:hover, .button:hover {
 	background-color: #0d0d0e;
 	color: #EF476F;
-	border: 3px solid #EF476F;
+	border-color:#EF476F;
 }
 
 input:focus {outline: none;}
@@ -218,8 +224,6 @@ input[type=text] {
 	width: 50vh;
 	padding: 10px 20px;
 }
-
-
 
 @media (max-width: 1000px) {
 	input[type=text] {
@@ -258,31 +262,10 @@ li {
 	margin: 0 10px;
 }
 
-.progress {
-	width: 30px;
-	margin: 100px;
-	height: 200px;
-	/*background-color: #ddd;*/
-	border: 2px solid #ddd;
-	border-radius: 5px;
-	position: relative;
-	display: inline-block;
-	border-spacing: 10px;
-}
-  
-#bar1, #bar2 {
-	bottom: 0;
-	border-radius: 5px;
-	width: 30px;
-	height: 0%;
-	background-color: #EF476F;
-	position: absolute;
-}
-
-.spacer {
-	height: 1em;
-}
-
-.pointer {
-	cursor: pointer;
+.tutorial td {
+	border: 1px solid gray;
+	width: 33.333%;
+	height: 50px;
+	vertical-align: middle;
+	background-color: #161618;
 }

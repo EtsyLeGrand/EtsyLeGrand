@@ -54,4 +54,4 @@ var height = 0, clicks = 0;
             if (event.isComposing || event.key === 13) {
               height = 0; return;
             }
-          });
+        });
