@@ -180,6 +180,7 @@ button {
 	border-radius: 2em;
 	border-color:#EF476F;
 	border-style: solid;
+	cursor: pointer;
 }
 
 input[type=submit].bigbutton {
