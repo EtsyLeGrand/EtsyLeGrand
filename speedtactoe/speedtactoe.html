@@ -3,18 +3,59 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../stylespeed.css" />
+    <link rel="stylesheet" href="./stylespeed.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="" />
     <title>Speedtactoe</title>
     <script src="https://kit.fontawesome.com/80cd6fff3b.js" crossorigin="anonymous"></script>
-    <script src="../speedtactoe.js"></script>
+    <script src="./speedtactoe.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="vertical-center center">
+
+            <table class="score">
+                <tr>
+                    <td class="left" style="padding-left: 30px;">0</td>
+                    <td class="right" style="padding-right: 30px;">0</td>
+                </tr>
+            </table>
+
+            <div class="spacer"></div>
+
+            <table class="tablegame">
+                <tr>
+                    <td style="background-image:url(./O.png); background-repeat: no-repeat; background-size: 50%; background-position: center; filter: invert(100%);">Q</td>
+                    <td style="background-image:url(./X.png); background-repeat: no-repeat; background-size: 47%; background-position: center; filter: invert(100%);">W</td>
+                    <td>E</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>S</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td>Z</td>
+                    <td>X</td>
+                    <td>C</td>
+                </tr>
+            </table>
+
+            <div class="spacer"></div>
+
+            <table class="tabletime">
+                <tr>
+                    <td class="left">3:00</td>
+                    <td class="right">3:00</td>
+                </tr>
+                <tr class="bank">
+                    <td class="left">10:00</td>
+                    <td class="right">10:00</td>
+                </tr>
+            </table>
+            <!--
             <h4>Speedtactoe se joue à 2 joueurs. Un joueur contôle la souris <i class="fas fa-mouse"></i>, et l'autre le clavier <i class="fas fa-keyboard"></i>.</h4>
             <br>
             <h4>Le joueur qui contrôle la souris a les <span style="font-size:xxx-large;">X</span> et celui qui contrôle le clavier a les <span style="font-size:xxx-large;">O</span>.</h4>
@@ -54,6 +95,7 @@
             </table>
             <br>
             <button class="button" type="submit" onclick="page2Tuto();">Suivant</button>
+            -->
         </div>
     </div>
     

@@ -270,3 +270,36 @@ li {
 	vertical-align: middle;
 	background-color: #161618;
 }
+
+.tablegame td {
+	border: 1px solid red;
+	height: 110px;
+	width: 110px;
+	text-align: left;
+	color: gray;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.tabletime {
+	color: white;
+
+}
+
+.tabletime td {
+	width: 180px;
+}
+
+.score td{
+	font-size: 45px;
+	color: white;
+	width: 180px;
+	box-sizing: border-box;
+}
+
+.bank {
+	font-size: 25px;
+}
+.spacer {
+	height: 1em;
+}
