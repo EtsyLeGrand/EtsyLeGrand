@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	background-color:#0d0d0e;
+	user-select: none;
 }
 ol, ul {
 	list-style: none;
@@ -54,25 +55,6 @@ br
     user-select: none; /* Standard */
 }
 /* FIN DU CSS RESET */
-::-moz-selection { /* Code for Firefox */
-	color: #0d0d0e;
-	background: none;
-	text-shadow:
-	-1px -1px 0 #EF476F,  
-    1px -1px 0 #EF476F,
-	-1px 1px 0 #EF476F,
-    1px 1px 0 #EF476F;
-}
-  
-::selection {
-	color: #0d0d0e;
-	background: none;
-	text-shadow:
-	-1px -1px 0 #EF476F,  
-    1px -1px 0 #EF476F,
-	-1px 1px 0 #EF476F,
-    1px 1px 0 #EF476F;
-}
 
 html, body {
 	height: 100%;
@@ -279,11 +261,11 @@ li {
 	color: gray;
 	padding-left: 10px;
 	padding-top: 10px;
+	cursor: pointer;
 }
 
 .tabletime {
 	color: white;
-
 }
 
 .tabletime td {
@@ -300,6 +282,7 @@ li {
 .bank {
 	font-size: 25px;
 }
+
 .spacer {
 	height: 1em;
 }
