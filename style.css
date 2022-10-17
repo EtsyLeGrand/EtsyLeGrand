@@ -25,6 +25,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	overflow-y: scroll;
+	padding-bottom: 50px;
 }
 ol, ul {
 	list-style: none;
@@ -54,23 +56,15 @@ br
 }
 /* FIN DU CSS RESET */
 ::-moz-selection { /* Code for Firefox */
-	color: #0d0d0e;
+	color: blue;
+	text-decoration: underline 1px blue;
 	background: none;
-	text-shadow:
-	-1px -1px 0 #EF476F,  
-    1px -1px 0 #EF476F,
-	-1px 1px 0 #EF476F,
-    1px 1px 0 #EF476F;
 }
   
 ::selection {
-	color: #0d0d0e;
+	color: blue;
+	text-decoration: underline 1px blue;
 	background: none;
-	text-shadow:
-	-1px -1px 0 #EF476F,  
-    1px -1px 0 #EF476F,
-	-1px 1px 0 #EF476F,
-    1px 1px 0 #EF476F;
 }
 
 h1, h2, h3, p {
@@ -78,12 +72,11 @@ h1, h2, h3, p {
 }
 
 body {
-	background-color:#0d0d0e;
+	background-color:#121213;
 	border-style: solid;
 	border-width: 18px;
-	border-color: #EF476F;
+	border-color: #351255;;
 	border-bottom: none;
-	border-radius: 4em;
 	min-height: 100vh;
 	box-sizing: border-box;
 }
@@ -95,6 +88,8 @@ body {
 .center {
 	display: block;
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 p {
@@ -128,94 +123,110 @@ footer {
 	width: 100%;
 	
 	text-align: center;
-	background-color: #EF476F;
+	background-color: #351255;;
+}
+
+table {
+	color: white;
+	width: 100%;
+	border-collapse: collapse
+}
+
+table tr img {
+	width: 500px;
+	height: 300px;
+	border-radius: 3em;
+	top: 100%
+}
+
+.tableSpacer {
+	width: 6%;
+	border: none;
+}
+
+.rowSpacer {
+	height: 50px;
+	border: none;
+}
+
+tr td, tr th {
+	/*border: solid 1px white;*/
+	padding: 10px;
+	width: 47%;
+}
+
+tr td p {
+	font-size: 20px;
+	line-height: 25px;
+	text-align: justify;
+}
+
+table tr {
+
+}
+
+tr th {
+	font-size: 50px;
+	border-top: solid 1px #fff;
+	border-right: solid 1px #fff;
+	border-left: solid 1px #fff;
+}
+
+tr td {
+	border-right: solid 1px #fff;
+	border-bottom: solid 1px #fff;
+	border-left: solid 1px #fff;
+}
+
+th small, td small {
+	font-size: 25px;
+}
+
+tr td img {
+	padding-bottom: 15px;
+}
+
+tr th {
+	padding-top: 15px;
+}
+
+.header {
+	padding-top: 50px;
 }
 
 footer p {
-	color: #0d0d0e;
+	color: #7626c2;
 }
 
 a small:hover  {
-	
+	color: #cfcfcf;
+	text-decoration: underline #cfcfcf;
 }
 
 p a:hover  {
-	text-shadow:
-	-.5px -.5px 0 #ffffff,  
-    .5px -.5px #ffffff,
-	-.5px .5px 0 #ffffff,
-    .5px .5px 0 #ffffff;
+	color: #5e1b9c;
 }
 
-/* ANIMATION DU NOM */
-
-.l1 {
--webkit-animation: letters 3s ;  /* Safari 4+ */
--moz-animation: letters 3s ;  /* Fx 5+ */
--o-animation: letters 3s ;  /* Opera 12+ */
-animation: letters 3s ;  /* IE 10+, Fx 29+ */
-animation-delay: 1s;
+.langChange {
+	text-decoration: underline white;
 }
 
-.l2 {
--webkit-animation: letters 3s ;  /* Safari 4+ */
--moz-animation: letters 3s ;  /* Fx 5+ */
--o-animation: letters 3s ;  /* Opera 12+ */
-animation: letters 3s ;  /* IE 10+, Fx 29+ */
-animation-delay: 1.14s;
-}
-
-.l3 {
--webkit-animation: letters 3s ;  /* Safari 4+ */
--moz-animation: letters 3s ;  /* Fx 5+ */
--o-animation: letters 3s ;  /* Opera 12+ */
-animation: letters 3s ;  /* IE 10+, Fx 29+ */
-animation-delay: 1.28s;
-}
-
-.l4 {
--webkit-animation: letters 3s ;  /* Safari 4+ */
--moz-animation: letters 3s ;  /* Fx 5+ */
--o-animation: letters 3s ;  /* Opera 12+ */
-animation: letters 3s ;  /* IE 10+, Fx 29+ */
-animation-delay: 1.43s;
-}
-
-
-.l5 {
--webkit-animation: letters 3s ;  /* Safari 4+ */
--moz-animation: letters 3s ;  /* Fx 5+ */
--o-animation: letters 3s ;  /* Opera 12+ */
-animation: letters 3s ;  /* IE 10+, Fx 29+ */
-animation-delay: 1.57s;
-}
-
-
-.l6 {
--webkit-animation: letters 3s ;  /* Safari 4+ */
--moz-animation: letters 3s ;  /* Fx 5+ */
--o-animation: letters 3s ;  /* Opera 12+ */
-animation: letters 3s ;  /* IE 10+, Fx 29+ */
-animation-delay: 1.73s;
-}
-
-.l7 {
--webkit-animation: letters 3s ;  /* Safari 4+ */
--moz-animation: letters 3s ;  /* Fx 5+ */
--o-animation: letters 3s ;  /* Opera 12+ */
-animation: letters 3s ;  /* IE 10+, Fx 29+ */
-animation-delay: 1.86s;
-}
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+  }
   
-@keyframes letters {
-
-0%, 6% {
-	/*color:#d4d4d4;*/
-	color: #EF476F;
-	-webkit-text-stroke: 1px #fff;
-	}
-13%, 100% {
-	color: #fff;
-	-webkit-text-stroke: 0px #fff;
-}
-}
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #351255;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #7626c2;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #5e1b9c;
+  }
