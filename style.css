@@ -112,13 +112,7 @@ body {
 	padding: 10px;
 }
 
-.flex-container > div > img {
-	width: 80%;
-	height: 300px;
-	border-radius: 2em;
-	top: 100%;
-	object-fit: cover;
-}
+
 
 .flex-container > div > small {
 	font-size: 25px;
@@ -130,8 +124,6 @@ body {
 	justify-content: center;
 	border-top: solid 1px white;
 	align-items: center;
-	height: 50px;
-	bottom: 0;
 	margin-top: auto;
 }
 
@@ -172,8 +164,13 @@ footer {
 	padding-top: 50px;
 }
 
+.subtitle {
+	padding: 50px 0 20px 0;
+}
+
 footer p {
 	color: #7626c2;
+	text-align: center;
 }
 
 a small:hover  {
@@ -186,8 +183,11 @@ p a:hover  {
 }
 
 .langChange {
-	text-decoration: underline white;
-	-webkit-text-decoration: underline white;
+	text-decoration-line: underline;
+	text-decoration-color: white;
+
+	-webkit-text-decoration-line: underline;
+	-webkit-text-decoration-color: white;
 }
 
 /* width */
@@ -216,7 +216,8 @@ p a:hover  {
 		margin: 2% 2%;
 	}
 	p {
-		font-size: 10px;
+		font-size: 20px;
+		text-align: justify;
 	}
 	
 	h1 {
@@ -229,6 +230,14 @@ p a:hover  {
 	
 	h3 {
 		font-size: 30px;
+	}
+
+	.flex-container > div > img {
+		width: 90%;
+		height: 150px;
+		border-radius: 2em;
+		top: 100%;
+		object-fit: cover;
 	}
 }
 
@@ -252,5 +261,13 @@ p a:hover  {
 	
 	h3 {
 		font-size: 50px;
+	}
+
+	.flex-container > div > img {
+		width: 80%;
+		height: 300px;
+		border-radius: 2em;
+		top: 100%;
+		object-fit: cover;
 	}
 }
