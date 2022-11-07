@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	overflow-x: visible;
 	overflow-y: scroll;
 	padding-bottom: 50px;
 }
@@ -80,9 +81,79 @@ body {
 	min-height: 100vh;
 	box-sizing: border-box;
 }
-
+/*
 .container {
 	margin: 2% 10%;
+}
+*/
+@media all and (max-width: 700px){
+	.container {
+	 margin: 2% 2%;
+	}
+}
+
+@media all and (min-width: 700px) and (max-width: 1000px) {
+	.container {
+	 margin: 2% 2%;
+	}
+}
+
+@media all and (min-width: 1000px) {
+	.container {
+	 margin: 2% 10%;
+	}
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.flex-container > div {
+	border: solid 1px white;
+	width: 47%;
+	margin: 10px;
+   	display: flex;
+   	flex-direction: column;
+}
+
+.flex-container > div *{
+	padding-bottom: 1%;
+	padding: 10px;
+}
+
+.flex-container > div > img {
+	width: 80%;
+	height: 300px;
+	border-radius: 2em;
+	top: 100%;
+	object-fit: cover;
+}
+
+.flex-container > div > small {
+	font-size: 25px;
+}
+
+.flex-container > div .specs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-top: solid 1px white;
+	align-items: center;
+	height: 50px;
+	bottom: 0;
+	margin-top: auto;
+}
+
+.flex-container > div .specs > p{
+	margin: 0 3%;
+}
+
+.left {
+	display: block;
+	text-align: left;
+	margin-left: 0;
 }
 
 .center {
@@ -135,7 +206,7 @@ table {
 table tr img {
 	width: 500px;
 	height: 300px;
-	border-radius: 3em;
+	border-radius: 2em;
 	top: 100%
 }
 

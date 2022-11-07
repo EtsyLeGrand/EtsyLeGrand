@@ -2,6 +2,7 @@
 <html>
 	<head>
         <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="../style.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
@@ -16,100 +17,88 @@
 		<a class="langChange" href="../en/"><small class="center">Speak English? Click here.</small></a>
 		
 		<h2 class="center header" type="text">Mes projets</h2><br><br>
-		<table>
-			<tr>
-				<th>Gestion des vendredis
-					<br>
-					<small>Cégep de Sherbrooke</small>
-				</th>
-				<th class="tableSpacer"></th>
-				<th>Application mobile WallStories
-					<br>
-					<small>Quinco & Cie</small>
-				</th>
-			</tr>
-			<tr>
-				<td>
-					<img class="center" src="../images/jrpg.png" alt="JRPG">
-
-					<p>
+		
+		<div class="flex-container">
+			<div>
+				<h3 class="center">Gestion des vendredis</h3>
+				<small class="center">Cégep de Sherbrooke</small>
+				<img class="center" src="../images/jrpg.png" alt="Projet des vendredis PM">
+				<p>
 					En 2020, pendant ma Technique de l'informatique, j'ai dû, dans une équipe de 4,
 					livrer un logiciel pour une vraie entreprise. Un de mes coéquipiers était employé au
 					au Séminaire de Sherbrooke, et ceux-ci avaient besoin d'un système pour
 					gérer les activités du vendredi de leurs élèves. Notre logiciel, codé en PHP (Laravel), permettait
 					de faire une gestion d'horaire, de localiser des covoitureurs, et de discuter avec eux dans
 					le site web.
-					</p>
-					
-				</td>
-				<td class="tableSpacer"></td>
-				<td>
-					<img class="center" src="../images/ws.jpg" alt="WallStories">
+				</p>
+				<div class="specs">
+					<p>PHP Laravel</p>
+					<p>OpenMap</p>
+					<p>Twilio</p>
+					<p>Gestion</p>
+				</div>
+			</div>
 
-					<p>
+			<div>
+				<h3 class="center">Application mobile WallStories</h3>
+				<small class="center">Quinco & Cie</small>
+				<img class="center" src="../images/ws.jpg" alt="WallStories">
+				<p>
 					En 2021, lorsque j'étais programmeur chez Quinco & Cie, j'ai dû contribuer à leur nouvelle application
 					mobile nommée WallStories. Les clients achètent un autocollant WallStories en magasin, et le colle à un mur de
 					de la maison. Ensuite, ils téléchargent l'app et activent le sticker avec son code d'activation. Le sticker
 					se met à s'animer sur le mur en utilisant Vuforia, une technologie de réalité augmentée. J'ai contribué au contenu de 
 					l'application, et j'ai livré une mise à jour en fin 2021.
-					</p>
-					
-				</td>
-			</tr>
-			<tr>
-				<td class="specs">
-					<small class="center">PHP Laravel &emsp; OpenMap &emsp; Twilio &emsp; Gestion</small>
-				</td>
-				<td class="tableSpacer"></td>
-				<td class="specs">
-					<small class="center">Unity3D (C#) &emsp; Mobile &emsp; AssetBundles</small>
-				</td>
-			</tr>
-			<tr class="rowSpacer"></tr>
-			<tr>
-				<th>Aerodynamic
-					<br>
-					<small>Collège Bart</small>
-				</th>
-				<th class="tableSpacer"></th>
-				<th>Projet de JRPG
-					<br>
-					<small>Collège Bart</small>
-				</th>
-			</tr>
-			<tr>
-				<td>
-					<img class="center" src="../images/aerodynamic.png" alt="Aerodynamic">
+				</p>
+				<div class="specs">
+					<p>Unity3D (C#)</p>
+					<p>Mobile</p>
+					<p>AssetBundles</p>
+				</div>
+			</div>
 
-					<p>
+
+			<div>
+				<h3 class="center">Aerodynamic</h3>
+				<small class="center">Collège Bart</small>
+				<img class="center" src="../images/aerodynamic.png" alt="Aerodynamic">
+				<p>
 					Au collège Bart, chaque élève avait un projet à faire qui était sensé émuler une production complète, mais
 					nous n'avions que 2 sessions (25 semaines) pour le compléter. Mon projet, Aerodynamic, est un platformer
 					basé sur la physique qui demande une grande précision au joueur. Celui-ci peut bouger les bras du personnage
 					avec la souris et se déplacer avec WASD. Ce fut ma première expérience de programmation d'un jeu-vidéo complet.
-					</p>
+				</p>
+				<div class="specs">
+					<p>Unity3D (C#)</p>
+					<p>Hinge Joints</p>
+					<p>Physics-based</p>
+				</div>
+			</div>
 
-				</td>
-				<td class="tableSpacer"></td>
-				<td>
-					<img class="center" src="../images/jrpg.png" alt="JRPG">
-
-					<p>
-					desc
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td class="specs">
-					<small class="center">Unity 3D (C#) &emsp; Hinge Joints &emsp; Physics-based</small>
-				</td>
-				<td class="tableSpacer"></td>
-				<td class="specs">
-					<small class="center">Unity 2D (C#) &emsp; Queues &emsp; Grid-based &emsp; Tiled</small>
-				</td>
-			</tr>
+			<div>
+				<h3 class="center">Projet de JRPG</h3>
+				<small class="center">Collège Bart</small>
+				<img class="center" src="../images/jrpg.png" alt="Projet de JRPG">
+				<p>
+					Ce projet dans le style d'un Japanese RPG a été fait dans le cadre d'un cours au collège Bart. Le jeu contient un
+					système de déplacement complet, des interactions avec la carte et des combats dans le même style que Final Fantasy.
+				</p>
+				<div class="specs">
+					<p>Unity 2D (C#)</p>
+					<p>Queues </p>
+					<p>Grid-based</p>
+					<p>Tiled</p>
+				</div>
+			</div>
 
 			
-		</table>
+
+
+			
+
+		</div>
+	
+		
 
 		<h2 class="center header" type="text">Me contacter</h2><br><br>
 		
