@@ -187,6 +187,7 @@ p a:hover  {
 
 .langChange {
 	text-decoration: underline white;
+	-webkit-text-decoration: underline white;
 }
 
 /* width */
