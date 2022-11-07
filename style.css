@@ -72,6 +72,11 @@ h1, h2, h3, p {
 	color: #FFFFFF;
 }
 
+html, body {
+	max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
 	background-color:#121213;
 	border-style: solid;
@@ -81,21 +86,10 @@ body {
 	min-height: 100vh;
 	box-sizing: border-box;
 }
-/*
-.container {
-	margin: 2% 10%;
-}
-*/
-@media all and (max-width: 1200px){
-	.container {
-	 margin: 2% 2%;
-	}
-}
 
-@media all and (min-width: 1200px) {
-	.container {
-	 margin: 2% 10%;
-	}
+.container {
+	max-width: 100%;
+    overflow-x: hidden;
 }
 
 .flex-container {
@@ -107,7 +101,7 @@ body {
 .flex-container > div {
 	border: solid 1px white;
 	width: 47%;
-	min-width: 500px;
+	min-width: 300px;
 	margin: 10px;
    	display: flex;
    	flex-direction: column;
@@ -158,23 +152,6 @@ body {
 	margin-right: auto;
 }
 
-p {
-	font-size: 20px;
-}
-
-h1 {
-	font-size: 130px;
-	
-}
-
-h2 {
-	font-size: 100px;
-}
-
-h3 {
-	font-size: 50px;
-}
-
 small {
 	color: #FFFFFF;
 }
@@ -188,72 +165,7 @@ footer {
 	bottom: 0;
 	width: 100%;
 	
-	text-align: center;
 	background-color: #351255;;
-}
-
-table {
-	color: white;
-	width: 100%;
-	border-collapse: collapse
-}
-
-table tr img {
-	width: 500px;
-	height: 300px;
-	border-radius: 2em;
-	top: 100%
-}
-
-.tableSpacer {
-	width: 6%;
-	border: none;
-}
-
-.rowSpacer {
-	height: 50px;
-	border: none;
-}
-
-tr td, tr th {
-	/*border: solid 1px white;*/
-	padding: 10px;
-	width: 47%;
-}
-
-tr td p {
-	font-size: 20px;
-	line-height: 25px;
-	text-align: justify;
-}
-
-table tr {
-
-}
-
-tr th {
-	font-size: 50px;
-	border-top: solid 1px #fff;
-	border-right: solid 1px #fff;
-	border-left: solid 1px #fff;
-}
-
-tr td {
-	border-right: solid 1px #fff;
-	border-bottom: solid 1px #fff;
-	border-left: solid 1px #fff;
-}
-
-th small, td small {
-	font-size: 25px;
-}
-
-tr td img {
-	padding-bottom: 15px;
-}
-
-tr th {
-	padding-top: 15px;
 }
 
 .header {
@@ -296,3 +208,48 @@ p a:hover  {
   ::-webkit-scrollbar-thumb:hover {
 	background: #5e1b9c;
   }
+
+  /*Mobile*/
+@media all and (max-width: 500px){
+	.container {
+		margin: 2% 2%;
+	}
+	p {
+		font-size: 10px;
+	}
+	
+	h1 {
+		font-size: 70px;
+	}
+	
+	h2 {
+		font-size: 50px;
+	}
+	
+	h3 {
+		font-size: 30px;
+	}
+}
+
+/*PC*/
+@media all and (min-width: 500px) {
+	.container {
+		margin: 2% 10%;
+	}
+	p {
+		font-size: 20px;
+	}
+	
+	h1 {
+		font-size: 130px;
+		
+	}
+	
+	h2 {
+		font-size: 100px;
+	}
+	
+	h3 {
+		font-size: 50px;
+	}
+}
