@@ -179,6 +179,7 @@ footer {
 
 .subtitle {
 	padding: 50px 0 20px 0;
+	color:#d7c0e1
 }
 
 footer p {
@@ -189,10 +190,6 @@ footer p {
 a small:hover  {
 	color: #cfcfcf;
 	text-decoration: underline #cfcfcf;
-}
-
-p a:hover  {
-	color: #5e1b9c;
 }
 
 .langChange {
@@ -261,6 +258,7 @@ p a:hover  {
 	}
 	p {
 		font-size: 20px;
+		text-align: justify;
 	}
 	
 	h1 {
