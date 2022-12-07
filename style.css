@@ -89,7 +89,8 @@ body {
 
 .container {
 	max-width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
+	padding-bottom: 4%;
 }
 
 .flex-container {
@@ -177,6 +178,16 @@ footer {
 	padding-top: 50px;
 }
 
+.contactfield {
+	font-size: 50px;
+	padding: 20px 40px 0px 40px;
+}
+
+a {
+	color:blueviolet;
+	text-decoration: underline;
+}
+
 .subtitle {
 	padding: 50px 0 20px 0;
 	color:#d7c0e1
@@ -185,6 +196,10 @@ footer {
 footer p {
 	color: #7626c2;
 	text-align: center;
+}
+
+footer a {
+	color: #7626c2;
 }
 
 a small:hover  {
@@ -220,7 +235,7 @@ a small:hover  {
 	background: #5e1b9c;
   }
 
-  /*Mobile*/
+/*Mobile*/
 @media all and (max-width: 500px){
 	.container {
 		margin: 2% 2%;
