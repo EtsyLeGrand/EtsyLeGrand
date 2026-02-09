@@ -1,4 +1,158 @@
 <!DOCTYPE html>
-<html>
-	<script>location.replace("./fr/")</script>
+<html class="i18n-loading">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="" />
+  <script id="i18n" type="application/json" src="./i18n.json"></script>
+  <title>Portfolio - Étienne Letarte</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1 class="center name">Étienne Letarte</h1>
+    <h3 data-i18n="jobtitle" class="center dark"></h3>
+    <br />
+    <a id="langChange" class="langChange" href="#">
+      <small data-i18n="chglang" class="center"></small>
+    </a>
+    <div class="projects">
+      <h2 data-i18n="pjctstitle" class="center header"></h2>
+      <br /><br />
+      <h3 data-i18n="pjctssect[0].subsecttitle" class="center dark"></h3>
+      <br /><br />
+      <div class="flex-container">
+        <div>
+          <h3 data-i18n="pjctssect[0].subsectcnt[0].title" class="center"></h3>
+          <small data-i18n="pjctssect[0].subsectcnt[0].subtitle" class="center dark"></small>
+          <img class="center" src="./images/aerodynamic.png" alt="Aerodynamic" />
+          <p data-i18n="pjctssect[0].subsectcnt[0].desc" class="desc">
+
+          </p>
+          <div class="specs">
+            <p data-i18n="pjctssect[0].subsectcnt[0].keywords[0]"></p>
+            <p data-i18n="pjctssect[0].subsectcnt[0].keywords[1]"></p>
+            <p data-i18n="pjctssect[0].subsectcnt[0].keywords[2]"></p>
+          </div>
+        </div>
+        <div>
+          <h3 data-i18n="pjctssect[0].subsectcnt[1].title" class="center"></h3>
+          <small data-i18n="pjctssect[0].subsectcnt[1].subtitle" class="center dark"></small>
+          <img class="center" src="./images/jrpg.png" alt="Projet de JRPG" />
+          <p data-i18n="pjctssect[0].subsectcnt[1].desc" class="desc">
+
+          </p>
+          <div class="specs">
+            <p data-i18n="pjctssect[0].subsectcnt[1].keywords[0]"></p>
+            <p data-i18n="pjctssect[0].subsectcnt[1].keywords[1]"></p>
+            <p data-i18n="pjctssect[0].subsectcnt[1].keywords[2]"></p>
+            <p data-i18n="pjctssect[0].subsectcnt[1].keywords[3]"></p>
+          </div>
+        </div>
+      </div>
+      <h3 data-i18n="pjctssect[1].subsecttitle" class="center subtitle"></h3>
+      <div class="flex-container">
+        <div>
+          <h3 data-i18n="pjctssect[1].subsectcnt[0].title" class="center"></h3>
+          <small data-i18n="pjctssect[1].subsectcnt[0].subtitle" class="center dark"></small>
+          <img class="center" src="./images/seminaire.jpg" alt="Projet des vendredis PM" />
+          <p data-i18n="pjctssect[1].subsectcnt[0].desc" class="desc">
+          </p>
+          <div class="specs">
+            <p data-i18n="pjctssect[1].subsectcnt[0].keywords[0]"></p>
+            <p data-i18n="pjctssect[1].subsectcnt[0].keywords[1]"></p>
+            <p data-i18n="pjctssect[1].subsectcnt[0].keywords[2]"></p>
+            <p data-i18n="pjctssect[1].subsectcnt[0].keywords[3]"></p>
+          </div>
+        </div>
+
+        <div>
+          <h3 data-i18n="pjctssect[1].subsectcnt[1].title" class="center"></h3>
+          <small data-i18n="pjctssect[1].subsectcnt[1].subtitle" class="center dark"></small>
+          <img class="center" src="./images/ws.jpg" alt="WallStories" />
+          <p data-i18n="pjctssect[1].subsectcnt[1].desc" class="desc">
+
+          </p>
+          <div class="specs">
+            <p data-i18n="pjctssect[1].subsectcnt[1].keywords[0]"></p>
+            <p data-i18n="pjctssect[1].subsectcnt[1].keywords[1]"></p>
+            <p data-i18n="pjctssect[1].subsectcnt[1].keywords[2]"></p>
+            <p data-i18n="pjctssect[1].subsectcnt[1].keywords[3]"></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="contact">
+      <h2 data-i18n="contacttitle" class="center header" type="text"></h2>
+      <br /><br />
+
+
+      <div class="flex-container">
+        <p class="contactfield"><a data-i18n="contactlabels[0]" href="mailto:etsyletarte@hotmail.com"></a></p>
+        <p class="contactfield"><a data-i18n="contactlabels[1]" href="https://www.linkedin.com/in/etienneletarte/"></a>
+        </p>
+      </div>
+
+
+    </div>
+
+  </div>
+  <footer>
+    <p data-i18n="footerrights"></p>
+    <p>
+      <a href="mailto:etsyletarte@hotmail.com">etsyletarte@hotmail.com</a>
+    </p>
+  </footer>
+</body>
+
+
+
+<script type="module">
+  let lang = localStorage.getItem("lang") ?? "fr";
+  localStorage.setItem("lang", lang);
+
+  //const i18n = JSON.parse(document.getElementById("i18n").textContent)
+  
+  const res = await fetch("../i18n.json")
+  const i18n = await res.json()
+  
+  try {
+    loadTranslations()
+  } finally {
+    document.documentElement.classList.remove("i18n-loading")
+  }
+
+  document.getElementById("langChange").addEventListener("click", (e) => {
+    e.preventDefault()
+    lang = (lang === "fr") ? "en" : "fr";
+    localStorage.setItem("lang", lang);
+    loadTranslations();
+  })
+
+  function getByPath(obj, path) {
+    const normalized = path.replace(/\[(\d+)\]/g, ".$1");
+    return normalized.split(".").reduce((acc, key) => acc?.[key], obj);
+  }
+
+  function loadTranslations() {
+    document.querySelectorAll("[data-i18n]").forEach(txt => {
+      const key = txt.getAttribute("data-i18n")
+      const dict = i18n[lang] ?? i18n.fr ?? {};
+      const value = getByPath(dict, key);
+      txt.textContent = (typeof value === "string" && value.length) ? value : "NULL";
+    })
+  }
+</script>
+
+
 </html>

@@ -58,6 +58,9 @@
                 ]
             }
         ],
+        "contactlabels": [
+            "Email", "LinkedIn"
+        ],
         "contacttitle": "Contact",
         "footerrights": "© 2026 Étienne Letarte. Tous droits réservés."
     },
@@ -119,6 +122,9 @@
                     }
                 ]
             }
+        ],
+        "contactlabels": [
+            "Email", "LinkedIn"
         ],
         "contacttitle": "Contact",
         "footerrights": "© 2026 Étienne Letarte. All rights reserved."

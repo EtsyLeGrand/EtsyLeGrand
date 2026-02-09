@@ -77,6 +77,8 @@ html, body {
     overflow-x: hidden;
 }
 
+html.i18n-loading body { visibility: hidden; }
+
 body {
 	background-color:#121213;
 	border-style: solid;
