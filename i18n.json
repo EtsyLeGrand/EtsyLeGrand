@@ -1,0 +1,126 @@
+{
+    "fr": {
+        "jobtitle": "Programmeur",
+        "chglang": "Speak English? Click here.",
+        "pjctstitle": "Mes projets",
+        "pjctssect": [
+            {
+                "subsecttitle": "Jeux-vidéos",
+                "subsectcnt": [
+                    {
+                        "title": "Aerodynamic",
+                        "subtitle": "Collège Bart",
+                        "desc": "Au collège Bart, chaque élève avait un projet à faire qui était sensé émuler une production complète, mais nous n'avions que 2 sessions (25 semaines) pour le compléter. Mon projet, Aerodynamic, est un platformer basé sur la physique qui demande une grande précision au joueur. Celui-ci peut bouger les bras du personnage avec la souris et se déplacer avec WASD. Ce fut ma première expérience de programmation d'un jeu-vidéo complet.",
+                        "keywords": [
+                            "Unity3D (C#)",
+                            "Hinge Joints",
+                            "Physics-based"
+                        ]
+                    },
+                    {
+                        "title": "Projet de JRPG",
+                        "subtitle": "Collège Bart",
+                        "desc": "Ce projet dans le style d'un Japanese RPG a été fait dans le cadre d'un cours au collège Bart. Le jeu contient un système de déplacement complet, des interactions avec la carte et des combats dans le même style que Final Fantasy.",
+                        "keywords": [
+                            "Unity2D (C#)",
+                            "Queues",
+                            "Grid-based",
+                            "Tiled"
+                        ]
+                    }
+                ]
+            },
+            {
+                "subsecttitle": "Programmation",
+                "subsectcnt": [
+                    {
+                        "title": "Gestion des vendredis",
+                        "subtitle": "Cégep de Sherbrooke",
+                        "desc": "En 2020, pendant ma Technique de l'informatique, j'ai dû, dans une équipe de 4, livrer un logiciel pour une vraie entreprise. Un de mes coéquipiers était employé au au Séminaire de Sherbrooke, et ceux-ci avaient besoin d'un système pour gérer les activités du vendredi de leurs élèves. Notre logiciel, codé en PHP (Laravel), permettait de faire une gestion d'horaire, de localiser des covoitureurs, et de discuter avec eux dans le site web.",
+                        "keywords": [
+                            "PHP Laravel",
+                            "OpenMap",
+                            "Twilio",
+                            "Gestion"
+                        ]
+                    },
+                    {
+                        "title": "Application mobile WallStories",
+                        "subtitle": "Quinco & Cie",
+                        "desc": "En 2021, lorsque j'étais programmeur chez Quinco & Cie, j'ai dû contribuer à leur nouvelle application mobile nommée WallStories. Les clients achètent un autocollant WallStories en magasin, et le colle à un mur de de la maison. Ensuite, ils téléchargent l'app et activent le sticker avec son code d'activation. Le sticker se met à s'animer sur le mur en utilisant Vuforia, une technologie de réalité augmentée. J'ai contribué au contenu de l'application, et j'ai livré des mises à jour en fin 2021.",
+                        "keywords": [
+                            "Unity3D (C#)",
+                            "Mobile",
+                            "AssetBundles",
+                            "Vuforia"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "contacttitle": "Contact",
+        "footerrights": "© 2026 Étienne Letarte. Tous droits réservés."
+    },
+    "en": {
+        "jobtitle": "Programmer",
+        "chglang": "Vous parlez français? Cliquez ici.",
+        "pjctstitle": "My projects",
+        "pjctssect": [
+            {
+                "subsecttitle": "My projects",
+                "subsectcnt": [
+                    {
+                        "title": "Aerodynamic",
+                        "subtitle": "My projects",
+                        "desc": "At Bart college, every student had a project to do in order to emulate a complete videogame production. We had 2 semesters (about 25 weeks) to complete the game. My project, Aerodynamic, is a platformer based on physics which requires a great amount of precision. The player can move his arms with the mouse and his legs with WASD. This project was my first experience in a full production.",
+                        "keywords": [
+                            "Unity3D (C#)",
+                            "Hinge Joints",
+                            "Physics-based"
+                        ]
+                    },
+                    {
+                        "title": "JRPG Project",
+                        "subtitle": "Bart College",
+                        "desc": "This project in the style of a Japanese RPG was made in a single Bart college course. The game contains a full movement system, map interactions and battles in the style of Final Fantasy.",
+                        "keywords": [
+                            "Unity2D (C#)",
+                            "Queues",
+                            "Grid-based",
+                            "Tiled"
+                        ]
+                    }
+                ]
+            },
+            {
+                "subsecttitle": "Programming",
+                "subsectcnt": [
+                    {
+                        "title": "Friday manager",
+                        "subtitle": "Cégep de Sherbrooke",
+                        "desc": "This project was made during my studies in computer technology at Cégep de Sherbrooke. As a team of 4, we had to deliver a piece of software to an actual company. One of my team members was already employed at the Séminaire de Sherbrooke, and they needed a system to manage their students activities on friday afternoons. Our software, made in PHP (Laravel), made it easy for them to manage schedules, and for parents to locate carpoolers and chat with them from a website.",
+                        "keywords": [
+                            "PHP Laravel",
+                            "OpenMap",
+                            "Twilio",
+                            "Management"
+                        ]
+                    },
+                    {
+                        "title": "WallStories mobile app",
+                        "subtitle": "Quinco & Co.",
+                        "desc": "In 2021, I contributed to the numerous updates of Quinco & Co's new WallStories app. Customers could buy WallStories stickers at different locations, and stick it to a wall in their house. Then, they could download the app and activate the sticker with an activation code. The sticker would then animate using Vuforia, an AR technology. I contributed to the app's content updates during 2021.",
+                        "keywords": [
+                            "Unity3D (C#)",
+                            "Mobile",
+                            "AssetBundles",
+                            "Vuforia"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "contacttitle": "Contact",
+        "footerrights": "© 2026 Étienne Letarte. All rights reserved."
+    }
+}
